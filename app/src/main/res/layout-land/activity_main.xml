@@ -19,7 +19,6 @@
             android:layout_width="200dp"
             android:layout_height="150dp"
             android:src="@drawable/simp"
-            app:layout_constraintBottom_toTopOf="@+id/next_button"
             app:layout_constraintEnd_toStartOf="@+id/username_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/log_in" />
@@ -61,7 +60,6 @@
             android:layout_below="@+id/log_in"
             android:layout_toEndOf="@+id/simp_image"
             android:background="@color/white"
-            android:fontFamily="@font/luckiest_guy"
             android:hint="Insert username here"
             android:paddingStart="6dp"
             app:layout_constraintEnd_toEndOf="@+id/username_text"
@@ -89,7 +87,6 @@
             android:layout_height="35dp"
             android:layout_toEndOf="@+id/simp_image"
             android:background="@color/white"
-            android:fontFamily="@font/luckiest_guy"
             android:hint="Insert password here"
             android:paddingStart="6dp"
             app:layout_constraintBottom_toBottomOf="@+id/simp_image"
@@ -102,12 +99,38 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:text="Next"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/luckiest_guy"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Next"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/simp_image" />
 
+
+        <TextView
+            android:id="@+id/singUp_text_logIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_chevron_black"
+            android:fontFamily="@font/luckiest_guy"
+            android:paddingStart="6dp"
+            android:text="Eres nuevo, Registrate"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/singUp_button_logIn"
+            app:layout_constraintEnd_toEndOf="@+id/password_edit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/password_edit" />
+
+        <Button
+            android:id="@+id/singUp_button_logIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/singUp_text_logIn"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="@+id/singUp_text_logIn" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

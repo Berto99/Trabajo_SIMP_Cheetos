@@ -4,7 +4,7 @@ import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
 @Database(
-        entities = {Usuario.class},
+        entities = {Usuario.class,Profesor.class},
         version = 1,
         exportSchema = false
 )

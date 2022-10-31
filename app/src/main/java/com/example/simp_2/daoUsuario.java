@@ -15,4 +15,13 @@ public interface daoUsuario {
     @Insert
     void insertarUsuario(Usuario...usuarios);
 
+    @Insert
+    void insertarProfesor(Profesor...profesors);
+
+    @Query("SELECT usuario from Usuario")
+    String  obtenerNombreUsuario();
+
+    @Query("SELECT * FROM Profesor")
+    List<Profesor> obtenerClases();
+
 }

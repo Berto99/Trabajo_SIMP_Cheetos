@@ -15,13 +15,13 @@ import java.util.List;
 public class RegistroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registro);
+        setContentView(R.layout.activity_registro);
 
-        EditText usuario = findViewById(R.id.newUsuario);
-        EditText passwd = findViewById(R.id.newPasswd);
-        EditText nombre = findViewById(R.id.new_nombre);
-        EditText apellido = findViewById(R.id.new_apellido);
-        Button boton = findViewById(R.id.boton_registrar);
+        EditText usuario = findViewById(R.id.username_edit_singUp);
+        EditText passwd = findViewById(R.id.password_edit_singUp);
+        EditText nombre = findViewById(R.id.name_edit);
+        EditText apellido = findViewById(R.id.surname_edit);
+        Button boton = findViewById(R.id.singUp_boton);
 
         List<Usuario> listaUsuarios;
 
