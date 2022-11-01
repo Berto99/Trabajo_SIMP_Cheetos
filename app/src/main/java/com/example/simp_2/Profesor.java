@@ -16,17 +16,12 @@ public class Profesor {
     String clase;
     String usu_profe;
 
-    public Profesor(@NonNull String usu,String clase){
+    public Profesor(String usu,String clase){
         this.usu_profe=usu;
         this.clase=clase;
     }
 
-    public Profesor(String clase){
-        this.clase=clase;
+    public Profesor() {
+
     }
-
-
-
-
-
 }

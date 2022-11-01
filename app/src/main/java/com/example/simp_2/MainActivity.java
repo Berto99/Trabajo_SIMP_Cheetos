@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 "Simp_BD"
         ).allowMainThreadQueries().build();
 
-        //appDatabase.DAOusuario().insertarUsuario(new Usuario("Berto18","1234","Alberto","Ruiz"));
-
         listaUsuarios = appDatabase.DAOusuario().obtenerUsuarios();
 
         comprobarUsuario(btnEntrar,user,pass,listaUsuarios);
@@ -46,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, RegistroActivity.class);
             startActivity(intent);
         });
-
-
-
 
     }
 
@@ -77,12 +72,11 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (comprobacionUsuario == 1 && comprobacionPasswd == 1) {
                 Intent intent = new Intent(this, TeacherActivity.class);
+                intent.putExtra("dato_usuario",usu);
                 intent.putExtra("dato_nombre",nombre);
                 intent.putExtra("dato_apellido",apellido);
 
                 startActivity(intent);
-
-
             }
             else {
                 Toast.makeText(this, "ERROR:Datos Incorrectos", Toast.LENGTH_SHORT).show();

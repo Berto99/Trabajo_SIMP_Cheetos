@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:padding="16dp"
-        android:background="@color/orange">
+        android:background="#FF9800">
 
         <ImageView
             android:id="@+id/simp_image"
@@ -55,7 +55,7 @@
             android:id="@+id/username_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@drawable/edit_text_border"
             android:hint="Insert username here"
             android:paddingStart="6dp"
             android:textColor="@color/black"
@@ -82,7 +82,7 @@
             android:id="@+id/password_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@drawable/edit_text_border"
             android:hint="Insert password here"
             android:paddingStart="6dp"
             android:textColor="@color/black"
@@ -122,6 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrar"
+            android:fontFamily="@font/luckiest_guy"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/singUp_text_logIn"
             app:layout_constraintHorizontal_bias="0.50"
