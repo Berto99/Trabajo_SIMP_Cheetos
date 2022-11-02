@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SIMP_2</string>
+    <string name="no_class_right_now" />
+    <string name="no_students_right_now">no_students_right_now</string>
+</resources>
