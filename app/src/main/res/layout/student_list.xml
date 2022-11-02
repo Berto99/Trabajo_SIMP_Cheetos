@@ -16,43 +16,27 @@
             android:id="@+id/id_student_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/luckiest_guy"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:fontFamily="@font/luckiest_guy"
             app:layout_constraintBottom_toBottomOf="@+id/name_student_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/name_student_text"
-            tools:text="1."/>
-
-        <ImageView
-            android:id="@+id/arrow_student_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_chevron_black"
-            app:layout_constraintBottom_toBottomOf="@+id/name_student_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/name_student_text" />
+            tools:text="1." />
 
 
         <TextView
             android:id="@+id/name_student_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/luckiest_guy"
-            android:layout_toStartOf="@+id/arrow_student_image"
+            android:layout_marginTop="16dp"
             android:layout_toEndOf="@+id/id_student_text"
+            android:fontFamily="@font/luckiest_guy"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/arrow_student_image"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/id_student_text"
             app:layout_constraintTop_toBottomOf="@+id/divider"
             tools:text="Adrián Cortés de Dios" />
@@ -67,5 +51,37 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/injus_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="Injustificada"
+            app:layout_constraintStart_toStartOf="@+id/id_student_text"
+            app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
+
+        <CheckBox
+            android:id="@+id/jus_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="Justificada"
+            app:layout_constraintStart_toEndOf="@+id/injus_checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
+
+        <CheckBox
+            android:id="@+id/retra_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="Retraso"
+            app:layout_constraintStart_toEndOf="@+id/jus_checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
