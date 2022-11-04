@@ -38,7 +38,6 @@ public class TeacherActivity extends AppCompatActivity {
 
         Bundle extras =getIntent().getExtras();
         String usuario = extras.getString("dato_usuario");
-        appDatabase.DAOprofesor().insertarProfesor(new Profesor(usuario,"2DAMB"));
 
         //PARA MOSTRAR EL CONTENIDO DEL RECYCLER VIEW
         binding.principalRecycler.setLayoutManager(new LinearLayoutManager(this));

@@ -45,19 +45,32 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/principal_students_recycler"
-            android:layout_width="387dp"
-            android:layout_height="570dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/save_faults"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/username_students_view"
-            tools:itemCount="5"
+            tools:itemCount="7"
             tools:listitem="@layout/student_list" />
 
-
+        <Button
+            android:id="@+id/save_faults"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="SAVE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <!--El mensaje cuando no hay lista-->
         <TextView
@@ -77,19 +90,6 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="@color/orange"
             android:visibility="gone"/>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/principal_students_recycler" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
