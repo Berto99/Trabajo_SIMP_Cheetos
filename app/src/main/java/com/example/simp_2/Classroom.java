@@ -7,6 +7,8 @@ import androidx.room.PrimaryKey;
 
 import java.util.Objects;
 
+import kotlin.contracts.Returns;
+
 @Entity(
         foreignKeys = @ForeignKey(entity = Usuario.class,parentColumns =
                 "usuario",childColumns = "fk_usuario")
@@ -30,6 +32,14 @@ public class Classroom {
 
     public String getName() {
         return name;
+    }
+
+    public String getFk_usuario(){
+        return fk_usuario;
+    }
+
+    public void setFk_usuario(String fk_usuario) {
+        this.fk_usuario = fk_usuario;
     }
 
     @Override

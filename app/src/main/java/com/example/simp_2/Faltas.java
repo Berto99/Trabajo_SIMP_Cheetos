@@ -8,8 +8,13 @@ import androidx.room.PrimaryKey;
 import java.util.Date;
 
 @Entity(
-        foreignKeys = @ForeignKey(entity = Student.class,parentColumns =
-        "id",childColumns = "fk_id_alumno")
+        foreignKeys = {@ForeignKey(entity = Student.class,parentColumns =
+        "id",childColumns = "fk_id_alumno"),
+
+        @ForeignKey(entity = Usuario.class,parentColumns =
+        "usuario",childColumns = "fk_usuario")}
+
+
 
         )
 
