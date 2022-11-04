@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:padding="16dp"
-        android:background="#FF9800">
+        android:background="@color/orange_pastel">
 
         <ImageView
             android:id="@+id/simp_image"
