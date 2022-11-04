@@ -45,8 +45,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/principal_students_recycler"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="387dp"
+            android:layout_height="570dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
@@ -56,6 +56,8 @@
             app:layout_constraintTop_toBottomOf="@+id/username_students_view"
             tools:itemCount="5"
             tools:listitem="@layout/student_list" />
+
+
 
         <!--El mensaje cuando no hay lista-->
         <TextView
@@ -75,6 +77,19 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="@color/orange"
             android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/principal_students_recycler" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
