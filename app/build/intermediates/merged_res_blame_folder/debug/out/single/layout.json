@@ -28,8 +28,12 @@
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/layout/student_list.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_main.xml",
-        "source": "com.example.simp_2.app-main-36:/layout/activity_main.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_add_student.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_add_student.xml"
+    },
+    {
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_add_class.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_add_class.xml"
     },
     {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-33:/layout/activity_main.xml",

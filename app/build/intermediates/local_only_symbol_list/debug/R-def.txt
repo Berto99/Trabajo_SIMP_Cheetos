@@ -14,6 +14,7 @@ color teal_200
 color teal_700
 color white
 drawable edit_text_border
+drawable edit_text_border_dark
 drawable ic_chevron_black
 drawable ic_launcher_background
 drawable ic_launcher_foreground

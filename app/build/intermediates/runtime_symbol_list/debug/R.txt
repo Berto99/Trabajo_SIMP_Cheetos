@@ -2463,6 +2463,7 @@ int drawable design_ic_visibility_off 0x7f080062
 int drawable design_password_eye 0x7f080063
 int drawable design_snackbar_background 0x7f080064
 int drawable edit_text_border 0x7f080065
+int drawable edit_text_border_dark 0x7f0800a0
 int drawable ic_chevron_black 0x7f080066
 int drawable ic_clock_black_24dp 0x7f080067
 int drawable ic_keyboard_black_24dp 0x7f080068

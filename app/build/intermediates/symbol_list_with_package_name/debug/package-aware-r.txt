@@ -2464,6 +2464,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit_text_border
+drawable edit_text_border_dark
 drawable ic_chevron_black
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
