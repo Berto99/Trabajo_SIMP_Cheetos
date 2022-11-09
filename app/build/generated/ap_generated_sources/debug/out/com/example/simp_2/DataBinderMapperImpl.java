@@ -99,11 +99,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           if ("layout-night/activity_main_0".equals(tag)) {
             return new ActivityMainBindingNightImpl(component, view);
           }
-          if ("layout-land/activity_main_0".equals(tag)) {
-            return new ActivityMainBindingLandImpl(component, view);
-          }
           if ("layout-land-night/activity_main_0".equals(tag)) {
             return new ActivityMainBindingLandNightImpl(component, view);
+          }
+          if ("layout-land/activity_main_0".equals(tag)) {
+            return new ActivityMainBindingLandImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
         }
@@ -217,8 +217,8 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout-night/activity_add_student_0", com.example.simp_2.R.layout.activity_add_student);
       sKeys.put("layout/activity_main_0", com.example.simp_2.R.layout.activity_main);
       sKeys.put("layout-night/activity_main_0", com.example.simp_2.R.layout.activity_main);
-      sKeys.put("layout-land/activity_main_0", com.example.simp_2.R.layout.activity_main);
       sKeys.put("layout-land-night/activity_main_0", com.example.simp_2.R.layout.activity_main);
+      sKeys.put("layout-land/activity_main_0", com.example.simp_2.R.layout.activity_main);
       sKeys.put("layout/activity_registro_0", com.example.simp_2.R.layout.activity_registro);
       sKeys.put("layout-night/activity_registro_0", com.example.simp_2.R.layout.activity_registro);
       sKeys.put("layout-land-night/activity_students_0", com.example.simp_2.R.layout.activity_students);
