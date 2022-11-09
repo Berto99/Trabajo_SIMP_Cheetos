@@ -36,6 +36,8 @@ public class AddClassActivity extends AppCompatActivity {
         //Recibimos el dato del usuario del activuty de classroom
         Bundle extras =getIntent().getExtras();
         String usuario= extras.getString("dato_usuario2");
+        String nombre = extras.getString("dato_nombre2");
+        String apellido = extras.getString("dato_apellido2");
 
         boton.setOnClickListener(view -> {
             String grade,nombreClass;
@@ -59,9 +61,13 @@ public class AddClassActivity extends AppCompatActivity {
                 }
                 else{
                     appDatabase.DAOClassroom().insertarClase(new Classroom((Integer.parseInt(grade)),nombreClass,usuario));
-                    Intent intent = new Intent(this, TeacherActivity.class);
-                    startActivity(intent);
                     Toast.makeText(this, "Registro correcto", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(this, TeacherActivity.class);
+                    intent.putExtra("dato_usuario",usuario);
+                    intent.putExtra("dato_nombre",nombre);
+                    intent.putExtra("dato_apellido",apellido);
+                    startActivity(intent);
+
                 }
             }
         });

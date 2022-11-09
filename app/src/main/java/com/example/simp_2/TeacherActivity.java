@@ -9,13 +9,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
 import com.example.simp_2.databinding.ActivityTeacherBinding;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class TeacherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,10 @@ public class TeacherActivity extends AppCompatActivity {
         //Variables
         TextView nombre_usuario= findViewById(R.id.username_view);
         Button boton = findViewById(R.id.button_registrer);
-        int id;
+        String nombre = null;
+        String apellido= null;
+        String usuario = null;
+        AtomicInteger id = new AtomicInteger();
 
         //BBDD
         AppData appDatabase = Room.databaseBuilder(
@@ -39,13 +42,12 @@ public class TeacherActivity extends AppCompatActivity {
         //Recibir dato del nombre y ponerlo en el edit text
 
         Bundle extras =getIntent().getExtras();
-        String nombre=extras.getString("dato_nombre");
-        String apellido = extras.getString("dato_apellido");
-        String usuario15= extras.getString("dato_usuario");
-        nombre_usuario.setText(nombre+" "+apellido);
-
-
-        id = appDatabase.DAOClassroom().obteneridClase();
+        if (extras!=null) {
+            nombre = extras.getString("dato_nombre");
+            apellido = extras.getString("dato_apellido");
+            usuario = extras.getString("dato_usuario");
+            nombre_usuario.setText(nombre + " " + apellido);
+        }
 
         //PARA MOSTRAR EL CONTENIDO DEL RECYCLER VIEW
         binding.principalRecycler.setLayoutManager(new LinearLayoutManager(this));
@@ -55,18 +57,27 @@ public class TeacherActivity extends AppCompatActivity {
 
         List <Classroom> clase = appDatabase.DAOClassroom().obtenerClase();
 
-
         ArrayList<Classroom> classroomList = new ArrayList<>();
         //Comprobaciones
         for(int i =0; i<clase.size();i++){
-            if(clase.get(i).getFk_usuario().equals(usuario15)){
+            if(clase.get(i).getFk_usuario().equals(usuario)){
                 classroomList.add(new Classroom(clase.get(i).getGrade(),clase.get(i).getName(), clase.get(i).getFk_usuario()));
             }
         }
 
         ClassroomAdapter adapter = new ClassroomAdapter();
+        String finalUsuario1 = usuario;
+        String finalNombre1 = nombre;
+        String finalApellido1 = apellido;
         adapter.setOnItemClickListener(classroom -> {
             Intent intent = new Intent(this, StudentsActivity.class);
+            intent.putExtra("dato_usuario", finalUsuario1);
+            intent.putExtra("dato_nombre", finalNombre1);
+            intent.putExtra("dato_apellido", finalApellido1);
+            id.set(appDatabase.DAOClassroom().obtenerClaseid(classroom.getName()));
+            intent.putExtra("id_clase", id);
+
+            Toast.makeText(this, "ERROR:La clase es "+id, Toast.LENGTH_SHORT).show();
             startActivity(intent);
         });
         binding.principalRecycler.setAdapter(adapter);
@@ -78,9 +89,22 @@ public class TeacherActivity extends AppCompatActivity {
             binding.emptyView.setVisibility(View.GONE);
         }
 
-        boton.setOnClickListener( view -> {
+        //pasar al activity de student
+
+
+
+        //Variable final de usuario para el intent
+        String finalUsuario = usuario;
+        String finalNombre = nombre;
+        String finalApellido = apellido;
+
+        //Boton para pasar al activity de crear clases
+        boton.setOnClickListener(view -> {
             Intent intent = new Intent(this, AddClassActivity.class);
-            intent.putExtra("dato_usuario2",usuario15);
+            intent.putExtra("dato_usuario2", finalUsuario);
+            intent.putExtra("dato_nombre2", finalNombre);
+            intent.putExtra("dato_apellido2", finalApellido);
+
             startActivity(intent);
         });
 

@@ -104,9 +104,15 @@ public final class daoClassroom_Impl implements daoClassroom {
   }
 
   @Override
-  public int obteneridClase() {
-    final String _sql = "SELECT id FROM Classroom";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+  public int obtenerClaseid(final String name) {
+    final String _sql = "SELECT id FROM Classroom where name=?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (name == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, name);
+    }
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {

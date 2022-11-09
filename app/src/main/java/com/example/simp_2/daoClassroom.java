@@ -14,6 +14,7 @@ public interface daoClassroom {
     @Insert
     void insertarClase(Classroom...classrooms);
 
-    @Query("SELECT id FROM Classroom")
-    int obteneridClase();
+    @Query("SELECT id FROM Classroom where name=:name")
+    int  obtenerClaseid(String name);
+
 }
