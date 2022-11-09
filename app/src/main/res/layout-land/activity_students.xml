@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StudentsActivity"
+        android:background="@color/orange_pastel"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/chosen_class"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_border"
+            android:fontFamily="@font/luckiest_guy"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2ºDAM-B" />
+
+        <TextView
+            android:id="@+id/username_students_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_border"
+            android:fontFamily="@font/luckiest_guy"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Pepe Martínez" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/principal_students_recycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/save_faults"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_students_view"
+            tools:itemCount="7"
+            tools:listitem="@layout/student_list" />
+
+        <!--El mensaje cuando no hay lista-->
+
+        <Button
+            android:id="@+id/save_faults"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="SAVE FOULTS"
+            app:layout_constraintBottom_toTopOf="@+id/new_student"
+            app:layout_constraintEnd_toEndOf="@+id/principal_students_recycler"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/principal_students_recycler" />
+
+        <TextView
+            android:id="@+id/empty_students_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="@string/no_students_right_now"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/orange"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/new_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new Student"
+            android:fontFamily="@font/luckiest_guy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
