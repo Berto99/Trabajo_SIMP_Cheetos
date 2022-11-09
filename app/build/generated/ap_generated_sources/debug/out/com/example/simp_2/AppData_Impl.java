@@ -34,21 +34,27 @@ public final class AppData_Impl extends AppData {
 
   private volatile daoClassroom _daoClassroom;
 
+  private volatile daoStudent _daoStudent;
+
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Usuario` (`usuario` TEXT NOT NULL, `contrasena` TEXT, `nombre` TEXT, `apellido` TEXT, PRIMARY KEY(`usuario`))");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Classroom` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `grade` INTEGER NOT NULL, `name` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Classroom` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fk_usuario` TEXT, `grade` INTEGER NOT NULL, `name` TEXT, FOREIGN KEY(`fk_usuario`) REFERENCES `Usuario`(`usuario`) ON UPDATE NO ACTION ON DELETE NO ACTION )");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Student` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fk_clase` INTEGER NOT NULL, `number_list` INTEGER NOT NULL, `name` TEXT, FOREIGN KEY(`fk_clase`) REFERENCES `Classroom`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION )");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Faltas` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fk_id_alumno` INTEGER NOT NULL, `fk_usuario` TEXT, `fecha` INTEGER, FOREIGN KEY(`fk_id_alumno`) REFERENCES `Student`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`fk_usuario`) REFERENCES `Usuario`(`usuario`) ON UPDATE NO ACTION ON DELETE NO ACTION )");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '08e41fa1ad2156b0379bca2761ce0835')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ca6f393202ff9a06676aef11d279697d')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `Usuario`");
         _db.execSQL("DROP TABLE IF EXISTS `Classroom`");
+        _db.execSQL("DROP TABLE IF EXISTS `Student`");
+        _db.execSQL("DROP TABLE IF EXISTS `Faltas`");
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
             mCallbacks.get(_i).onDestructiveMigration(_db);
@@ -68,6 +74,7 @@ public final class AppData_Impl extends AppData {
       @Override
       public void onOpen(SupportSQLiteDatabase _db) {
         mDatabase = _db;
+        _db.execSQL("PRAGMA foreign_keys = ON");
         internalInitInvalidationTracker(_db);
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
@@ -101,11 +108,13 @@ public final class AppData_Impl extends AppData {
                   + " Expected:\n" + _infoUsuario + "\n"
                   + " Found:\n" + _existingUsuario);
         }
-        final HashMap<String, TableInfo.Column> _columnsClassroom = new HashMap<String, TableInfo.Column>(3);
+        final HashMap<String, TableInfo.Column> _columnsClassroom = new HashMap<String, TableInfo.Column>(4);
         _columnsClassroom.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsClassroom.put("fk_usuario", new TableInfo.Column("fk_usuario", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsClassroom.put("grade", new TableInfo.Column("grade", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsClassroom.put("name", new TableInfo.Column("name", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysClassroom = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.ForeignKey> _foreignKeysClassroom = new HashSet<TableInfo.ForeignKey>(1);
+        _foreignKeysClassroom.add(new TableInfo.ForeignKey("Usuario", "NO ACTION", "NO ACTION",Arrays.asList("fk_usuario"), Arrays.asList("usuario")));
         final HashSet<TableInfo.Index> _indicesClassroom = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoClassroom = new TableInfo("Classroom", _columnsClassroom, _foreignKeysClassroom, _indicesClassroom);
         final TableInfo _existingClassroom = TableInfo.read(_db, "Classroom");
@@ -114,9 +123,40 @@ public final class AppData_Impl extends AppData {
                   + " Expected:\n" + _infoClassroom + "\n"
                   + " Found:\n" + _existingClassroom);
         }
+        final HashMap<String, TableInfo.Column> _columnsStudent = new HashMap<String, TableInfo.Column>(4);
+        _columnsStudent.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsStudent.put("fk_clase", new TableInfo.Column("fk_clase", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsStudent.put("number_list", new TableInfo.Column("number_list", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsStudent.put("name", new TableInfo.Column("name", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysStudent = new HashSet<TableInfo.ForeignKey>(1);
+        _foreignKeysStudent.add(new TableInfo.ForeignKey("Classroom", "NO ACTION", "NO ACTION",Arrays.asList("fk_clase"), Arrays.asList("id")));
+        final HashSet<TableInfo.Index> _indicesStudent = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoStudent = new TableInfo("Student", _columnsStudent, _foreignKeysStudent, _indicesStudent);
+        final TableInfo _existingStudent = TableInfo.read(_db, "Student");
+        if (! _infoStudent.equals(_existingStudent)) {
+          return new RoomOpenHelper.ValidationResult(false, "Student(com.example.simp_2.Student).\n"
+                  + " Expected:\n" + _infoStudent + "\n"
+                  + " Found:\n" + _existingStudent);
+        }
+        final HashMap<String, TableInfo.Column> _columnsFaltas = new HashMap<String, TableInfo.Column>(4);
+        _columnsFaltas.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsFaltas.put("fk_id_alumno", new TableInfo.Column("fk_id_alumno", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsFaltas.put("fk_usuario", new TableInfo.Column("fk_usuario", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsFaltas.put("fecha", new TableInfo.Column("fecha", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysFaltas = new HashSet<TableInfo.ForeignKey>(2);
+        _foreignKeysFaltas.add(new TableInfo.ForeignKey("Student", "NO ACTION", "NO ACTION",Arrays.asList("fk_id_alumno"), Arrays.asList("id")));
+        _foreignKeysFaltas.add(new TableInfo.ForeignKey("Usuario", "NO ACTION", "NO ACTION",Arrays.asList("fk_usuario"), Arrays.asList("usuario")));
+        final HashSet<TableInfo.Index> _indicesFaltas = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoFaltas = new TableInfo("Faltas", _columnsFaltas, _foreignKeysFaltas, _indicesFaltas);
+        final TableInfo _existingFaltas = TableInfo.read(_db, "Faltas");
+        if (! _infoFaltas.equals(_existingFaltas)) {
+          return new RoomOpenHelper.ValidationResult(false, "Faltas(com.example.simp_2.Faltas).\n"
+                  + " Expected:\n" + _infoFaltas + "\n"
+                  + " Found:\n" + _existingFaltas);
+        }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "08e41fa1ad2156b0379bca2761ce0835", "20a950a1cab30f50206f03a211029066");
+    }, "ca6f393202ff9a06676aef11d279697d", "a9fefce27bf7770dadbb0eafaf052955");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -129,20 +169,32 @@ public final class AppData_Impl extends AppData {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "Usuario","Classroom");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "Usuario","Classroom","Student","Faltas");
   }
 
   @Override
   public void clearAllTables() {
     super.assertNotMainThread();
     final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
+    boolean _supportsDeferForeignKeys = android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP;
     try {
+      if (!_supportsDeferForeignKeys) {
+        _db.execSQL("PRAGMA foreign_keys = FALSE");
+      }
       super.beginTransaction();
-      _db.execSQL("DELETE FROM `Usuario`");
+      if (_supportsDeferForeignKeys) {
+        _db.execSQL("PRAGMA defer_foreign_keys = TRUE");
+      }
+      _db.execSQL("DELETE FROM `Faltas`");
+      _db.execSQL("DELETE FROM `Student`");
       _db.execSQL("DELETE FROM `Classroom`");
+      _db.execSQL("DELETE FROM `Usuario`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
+      if (!_supportsDeferForeignKeys) {
+        _db.execSQL("PRAGMA foreign_keys = TRUE");
+      }
       _db.query("PRAGMA wal_checkpoint(FULL)").close();
       if (!_db.inTransaction()) {
         _db.execSQL("VACUUM");
@@ -155,6 +207,7 @@ public final class AppData_Impl extends AppData {
     final HashMap<Class<?>, List<Class<?>>> _typeConvertersMap = new HashMap<Class<?>, List<Class<?>>>();
     _typeConvertersMap.put(daoUsuario.class, daoUsuario_Impl.getRequiredConverters());
     _typeConvertersMap.put(daoClassroom.class, daoClassroom_Impl.getRequiredConverters());
+    _typeConvertersMap.put(daoStudent.class, daoStudent_Impl.getRequiredConverters());
     return _typeConvertersMap;
   }
 
@@ -194,6 +247,20 @@ public final class AppData_Impl extends AppData {
           _daoClassroom = new daoClassroom_Impl(this);
         }
         return _daoClassroom;
+      }
+    }
+  }
+
+  @Override
+  public daoStudent DAOStudent() {
+    if (_daoStudent != null) {
+      return _daoStudent;
+    } else {
+      synchronized(this) {
+        if(_daoStudent == null) {
+          _daoStudent = new daoStudent_Impl(this);
+        }
+        return _daoStudent;
       }
     }
   }

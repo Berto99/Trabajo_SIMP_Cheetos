@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:padding="16dp"
-        android:background="@color/orange" android:tag="layout-land/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+        android:background="@color/orange_pastel" android:tag="layout-land/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
         <ImageView
             android:id="@+id/simp_image"
@@ -114,19 +114,21 @@
             android:drawableStart="@drawable/ic_chevron_black"
             android:fontFamily="@font/luckiest_guy"
             android:paddingStart="6dp"
-            android:text="Eres nuevo, Registrate"
+            android:text="¿Eres nuevo? Registrate"
             android:textColor="@color/black"
             android:textSize="20dp"
             app:layout_constraintBottom_toTopOf="@+id/singUp_button_logIn"
-            app:layout_constraintEnd_toEndOf="@+id/password_edit"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/password_edit" />
+            app:layout_constraintEnd_toEndOf="@+id/next_button"
+            app:layout_constraintStart_toStartOf="@+id/next_button"
+            app:layout_constraintTop_toBottomOf="@+id/next_button"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/singUp_button_logIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrar"
+            android:fontFamily="@font/luckiest_guy"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/singUp_text_logIn"
             app:layout_constraintHorizontal_bias="0.50"

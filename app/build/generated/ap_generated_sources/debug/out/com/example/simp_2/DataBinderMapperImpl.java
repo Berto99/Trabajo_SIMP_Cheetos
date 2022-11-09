@@ -6,6 +6,8 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.example.simp_2.databinding.ActivityAddClassBindingImpl;
+import com.example.simp_2.databinding.ActivityAddStudentBindingImpl;
 import com.example.simp_2.databinding.ActivityMainBindingImpl;
 import com.example.simp_2.databinding.ActivityMainBindingLandImpl;
 import com.example.simp_2.databinding.ActivityRegistroBindingImpl;
@@ -13,6 +15,7 @@ import com.example.simp_2.databinding.ActivityStudentsBindingImpl;
 import com.example.simp_2.databinding.ActivityTeacherBindingImpl;
 import com.example.simp_2.databinding.PrincipalListBindingImpl;
 import com.example.simp_2.databinding.StudentListBindingImpl;
+import com.example.simp_2.databinding.StudentListBindingLandImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -24,21 +27,27 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYMAIN = 1;
+  private static final int LAYOUT_ACTIVITYADDCLASS = 1;
 
-  private static final int LAYOUT_ACTIVITYREGISTRO = 2;
+  private static final int LAYOUT_ACTIVITYADDSTUDENT = 2;
 
-  private static final int LAYOUT_ACTIVITYSTUDENTS = 3;
+  private static final int LAYOUT_ACTIVITYMAIN = 3;
 
-  private static final int LAYOUT_ACTIVITYTEACHER = 4;
+  private static final int LAYOUT_ACTIVITYREGISTRO = 4;
 
-  private static final int LAYOUT_PRINCIPALLIST = 5;
+  private static final int LAYOUT_ACTIVITYSTUDENTS = 5;
 
-  private static final int LAYOUT_STUDENTLIST = 6;
+  private static final int LAYOUT_ACTIVITYTEACHER = 6;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
+  private static final int LAYOUT_PRINCIPALLIST = 7;
+
+  private static final int LAYOUT_STUDENTLIST = 8;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(8);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_add_class, LAYOUT_ACTIVITYADDCLASS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_add_student, LAYOUT_ACTIVITYADDSTUDENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_registro, LAYOUT_ACTIVITYREGISTRO);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_students, LAYOUT_ACTIVITYSTUDENTS);
@@ -56,6 +65,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYADDCLASS: {
+          if ("layout/activity_add_class_0".equals(tag)) {
+            return new ActivityAddClassBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_add_class is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYADDSTUDENT: {
+          if ("layout/activity_add_student_0".equals(tag)) {
+            return new ActivityAddStudentBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_add_student is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYMAIN: {
           if ("layout/activity_main_0".equals(tag)) {
             return new ActivityMainBindingImpl(component, view);
@@ -90,6 +111,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           throw new IllegalArgumentException("The tag for principal_list is invalid. Received: " + tag);
         }
         case  LAYOUT_STUDENTLIST: {
+          if ("layout-land/student_list_0".equals(tag)) {
+            return new StudentListBindingLandImpl(component, view);
+          }
           if ("layout/student_list_0".equals(tag)) {
             return new StudentListBindingImpl(component, view);
           }
@@ -148,15 +172,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(10);
 
     static {
+      sKeys.put("layout/activity_add_class_0", com.example.simp_2.R.layout.activity_add_class);
+      sKeys.put("layout/activity_add_student_0", com.example.simp_2.R.layout.activity_add_student);
       sKeys.put("layout/activity_main_0", com.example.simp_2.R.layout.activity_main);
       sKeys.put("layout-land/activity_main_0", com.example.simp_2.R.layout.activity_main);
       sKeys.put("layout/activity_registro_0", com.example.simp_2.R.layout.activity_registro);
       sKeys.put("layout/activity_students_0", com.example.simp_2.R.layout.activity_students);
       sKeys.put("layout/activity_teacher_0", com.example.simp_2.R.layout.activity_teacher);
       sKeys.put("layout/principal_list_0", com.example.simp_2.R.layout.principal_list);
+      sKeys.put("layout-land/student_list_0", com.example.simp_2.R.layout.student_list);
       sKeys.put("layout/student_list_0", com.example.simp_2.R.layout.student_list);
     }
   }

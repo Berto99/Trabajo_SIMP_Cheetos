@@ -1748,6 +1748,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color orange
+color orange_pastel
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2593,6 +2594,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_class_text
+id add_student_text
 id alertTitle
 id aligned
 id all
@@ -2621,8 +2624,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id buttonPanel
+id button_registrer
 id cache_measures
 id callMeasure
 id cancel_button
@@ -2738,6 +2741,8 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id grade_class_input
+id grade_class_text
 id grade_text
 id graph
 id graph_wrap
@@ -2837,6 +2842,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_class_input
+id name_class_text
 id name_edit
 id name_student_text
 id name_text
@@ -2850,6 +2857,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_student
 id next_button
 id noScroll
 id noState
@@ -2892,6 +2900,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id register_student
 id retra_checkBox
 id reverseSawtooth
 id right
@@ -2900,6 +2909,8 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id save_button
+id save_faults
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2963,6 +2974,7 @@ id staticLayout
 id staticPostLayout
 id stop
 id stretch
+id student_name
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -3140,6 +3152,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_class
+layout activity_add_student
 layout activity_main
 layout activity_registro
 layout activity_students

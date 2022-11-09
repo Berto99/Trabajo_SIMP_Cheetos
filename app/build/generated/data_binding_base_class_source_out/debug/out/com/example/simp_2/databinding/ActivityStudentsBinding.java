@@ -17,28 +17,32 @@ import java.lang.Object;
 
 public abstract class ActivityStudentsBinding extends ViewDataBinding {
   @NonNull
-  public final Button button;
-
-  @NonNull
   public final TextView chosenClass;
 
   @NonNull
   public final TextView emptyStudentsView;
 
   @NonNull
+  public final Button newStudent;
+
+  @NonNull
   public final RecyclerView principalStudentsRecycler;
+
+  @NonNull
+  public final Button saveFaults;
 
   @NonNull
   public final TextView usernameStudentsView;
 
   protected ActivityStudentsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button button, TextView chosenClass, TextView emptyStudentsView,
-      RecyclerView principalStudentsRecycler, TextView usernameStudentsView) {
+      TextView chosenClass, TextView emptyStudentsView, Button newStudent,
+      RecyclerView principalStudentsRecycler, Button saveFaults, TextView usernameStudentsView) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.button = button;
     this.chosenClass = chosenClass;
     this.emptyStudentsView = emptyStudentsView;
+    this.newStudent = newStudent;
     this.principalStudentsRecycler = principalStudentsRecycler;
+    this.saveFaults = saveFaults;
     this.usernameStudentsView = usernameStudentsView;
   }
 

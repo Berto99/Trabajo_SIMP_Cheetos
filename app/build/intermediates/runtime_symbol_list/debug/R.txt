@@ -1747,6 +1747,7 @@ int color mtrl_textinput_hovered_box_stroke_color 0x7f060237
 int color notification_action_color_filter 0x7f060238
 int color notification_icon_bg_color 0x7f060239
 int color orange 0x7f06023a
+int color orange_pastel 0x7f06025b
 int color primary_dark_material_dark 0x7f06023b
 int color primary_dark_material_light 0x7f06023c
 int color primary_material_dark 0x7f06023d
@@ -2592,6 +2593,8 @@ int id action_text 0x7f0a0043
 int id actions 0x7f0a0044
 int id activity_chooser_view_content 0x7f0a0045
 int id add 0x7f0a0046
+int id add_class_text 0x7f0a020e
+int id add_student_text 0x7f0a020f
 int id alertTitle 0x7f0a0047
 int id aligned 0x7f0a0048
 int id all 0x7f0a0049
@@ -2620,8 +2623,8 @@ int id bounce 0x7f0a005f
 int id bounceBoth 0x7f0a0060
 int id bounceEnd 0x7f0a0061
 int id bounceStart 0x7f0a0062
-int id button 0x7f0a0063
 int id buttonPanel 0x7f0a0064
+int id button_registrer 0x7f0a0210
 int id cache_measures 0x7f0a0065
 int id callMeasure 0x7f0a0066
 int id cancel_button 0x7f0a0067
@@ -2737,6 +2740,8 @@ int id fullscreen_header 0x7f0a00d4
 int id ghost_view 0x7f0a00d5
 int id ghost_view_holder 0x7f0a00d6
 int id gone 0x7f0a00d7
+int id grade_class_input 0x7f0a0211
+int id grade_class_text 0x7f0a0212
 int id grade_text 0x7f0a00d8
 int id graph 0x7f0a00d9
 int id graph_wrap 0x7f0a00da
@@ -2836,6 +2841,8 @@ int id mtrl_picker_text_input_range_start 0x7f0a0137
 int id mtrl_picker_title_text 0x7f0a0138
 int id mtrl_view_tag_bottom_padding 0x7f0a0139
 int id multiply 0x7f0a013a
+int id name_class_input 0x7f0a0213
+int id name_class_text 0x7f0a0214
 int id name_edit 0x7f0a013b
 int id name_student_text 0x7f0a013c
 int id name_text 0x7f0a013d
@@ -2849,6 +2856,7 @@ int id navigation_header_container 0x7f0a0144
 int id never 0x7f0a0145
 int id neverCompleteToEnd 0x7f0a0146
 int id neverCompleteToStart 0x7f0a0147
+int id new_student 0x7f0a0215
 int id next_button 0x7f0a0148
 int id noScroll 0x7f0a0149
 int id noState 0x7f0a014a
@@ -2891,6 +2899,7 @@ int id progress_horizontal 0x7f0a016e
 int id radio 0x7f0a016f
 int id ratio 0x7f0a0170
 int id rectangles 0x7f0a0171
+int id register_student 0x7f0a0216
 int id retra_checkBox 0x7f0a0172
 int id reverseSawtooth 0x7f0a0173
 int id right 0x7f0a0174
@@ -2899,6 +2908,8 @@ int id right_icon 0x7f0a0176
 int id right_side 0x7f0a0177
 int id rounded 0x7f0a0178
 int id row_index_key 0x7f0a0179
+int id save_button 0x7f0a0217
+int id save_faults 0x7f0a0218
 int id save_non_transition_alpha 0x7f0a017a
 int id save_overlay_view 0x7f0a017b
 int id sawtooth 0x7f0a017c
@@ -2962,6 +2973,7 @@ int id staticLayout 0x7f0a01b5
 int id staticPostLayout 0x7f0a01b6
 int id stop 0x7f0a01b7
 int id stretch 0x7f0a01b8
+int id student_name 0x7f0a0219
 int id submenuarrow 0x7f0a01b9
 int id submit_area 0x7f0a01ba
 int id supportScrollUp 0x7f0a01bb
@@ -3139,6 +3151,8 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_add_class 0x7f0d007c
+int layout activity_add_student 0x7f0d007d
 int layout activity_main 0x7f0d001c
 int layout activity_registro 0x7f0d001d
 int layout activity_students 0x7f0d001e

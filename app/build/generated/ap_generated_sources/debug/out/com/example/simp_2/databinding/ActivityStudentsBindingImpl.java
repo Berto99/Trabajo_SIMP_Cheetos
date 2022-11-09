@@ -17,8 +17,9 @@ public class ActivityStudentsBindingImpl extends ActivityStudentsBinding  {
         sViewsWithIds.put(R.id.chosen_class, 1);
         sViewsWithIds.put(R.id.username_students_view, 2);
         sViewsWithIds.put(R.id.principal_students_recycler, 3);
-        sViewsWithIds.put(R.id.empty_students_view, 4);
-        sViewsWithIds.put(R.id.button, 5);
+        sViewsWithIds.put(R.id.save_faults, 4);
+        sViewsWithIds.put(R.id.empty_students_view, 5);
+        sViewsWithIds.put(R.id.new_student, 6);
     }
     // views
     @NonNull
@@ -29,14 +30,15 @@ public class ActivityStudentsBindingImpl extends ActivityStudentsBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityStudentsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private ActivityStudentsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.Button) bindings[5]
             , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.Button) bindings[6]
             , (androidx.recyclerview.widget.RecyclerView) bindings[3]
+            , (android.widget.Button) bindings[4]
             , (android.widget.TextView) bindings[2]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];

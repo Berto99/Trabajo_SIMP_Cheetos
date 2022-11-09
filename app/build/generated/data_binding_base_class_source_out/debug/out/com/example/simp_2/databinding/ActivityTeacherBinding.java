@@ -4,6 +4,7 @@ package com.example.simp_2.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +16,9 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityTeacherBinding extends ViewDataBinding {
+  @NonNull
+  public final Button buttonRegistrer;
+
   @NonNull
   public final TextView classes;
 
@@ -28,8 +32,10 @@ public abstract class ActivityTeacherBinding extends ViewDataBinding {
   public final TextView usernameView;
 
   protected ActivityTeacherBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView classes, TextView emptyView, RecyclerView principalRecycler, TextView usernameView) {
+      Button buttonRegistrer, TextView classes, TextView emptyView, RecyclerView principalRecycler,
+      TextView usernameView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonRegistrer = buttonRegistrer;
     this.classes = classes;
     this.emptyView = emptyView;
     this.principalRecycler = principalRecycler;

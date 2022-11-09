@@ -8,6 +8,10 @@
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/font/luckiest_guy.xml"
     },
     {
+        "merged": "com.example.simp_2.app-merged_res-34:/layout_activity_add_student.xml.flat",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_add_student.xml"
+    },
+    {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-debug-35:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-debug-35:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.simp_2.app-merged_res-34:/layout_activity_registro.xml.flat",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_registro.xml"
     },
     {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
@@ -42,6 +50,10 @@
     {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/layout-land_activity_main.xml.flat",
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/layout-land/activity_main.xml"
+    },
+    {
+        "merged": "com.example.simp_2.app-merged_res-34:/layout_activity_add_class.xml.flat",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_add_class.xml"
     },
     {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/layout_activity_students.xml.flat",
@@ -72,6 +84,10 @@
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/xml/data_extraction_rules.xml"
     },
     {
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/layout_activity_add_student.xml.flat",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/layout/activity_add_student.xml"
+    },
+    {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/xml_backup_rules.xml.flat",
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/xml/backup_rules.xml"
     },
@@ -88,6 +104,18 @@
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-debug-35:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/layout_activity_add_class.xml.flat",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/layout/activity_add_class.xml"
+    },
+    {
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/layout-land_student_list.xml.flat",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/layout-land/student_list.xml"
+    },
+    {
+        "merged": "com.example.simp_2.app-merged_res-34:/layout_activity_teacher.xml.flat",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_teacher.xml"
+    },
+    {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/layout_activity_main.xml.flat",
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/layout/activity_main.xml"
     },
@@ -100,20 +128,16 @@
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-debug-35:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.simp_2.app-merged_res-34:/layout_activity_students.xml.flat",
-        "source": "com.example.simp_2.app-main-36:/layout/activity_students.xml"
-    },
-    {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/drawable_ic_launcher_background.xml.flat",
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-debug-35:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-debug-35:/mipmap-hdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/layout_activity_teacher.xml.flat",
         "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-36:/layout/activity_teacher.xml"
+    },
+    {
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-debug-35:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-merged_res-34:/drawable-v24_ic_launcher_foreground.xml.flat",

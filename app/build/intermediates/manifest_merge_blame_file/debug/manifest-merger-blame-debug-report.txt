@@ -11,7 +11,7 @@
 9-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:5:5-54:19
+11-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:5:5-67:19
 12        android:allowBackup="true"
 12-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,106 +34,132 @@
 23        android:theme="@style/Theme.SIMP_2" >
 23-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:13:9-44
 24        <activity
-24-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:15:9-27:20
-25            android:name="com.example.simp_2.MainActivity"
-25-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:16:13-41
-26            android:exported="true" >
-26-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:17:13-36
-27            <intent-filter>
-27-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:18:13-22:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:17-69
-28-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:21:17-77
-30-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:21:27-74
-31            </intent-filter>
-32
-33            <meta-data
-33-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:24:13-26:36
-34                android:name="android.app.lib_name"
-34-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:25:17-52
-35                android:value="" />
-35-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:26:17-33
-36        </activity>
-37        <activity
-37-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:29:9-35:20
-38            android:name="com.example.simp_2.TeacherActivity"
-38-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:30:13-44
-39            android:exported="false" >
-39-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:31:13-37
-40            <meta-data
-40-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:24:13-26:36
-41                android:name="android.app.lib_name"
-41-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:25:17-52
-42                android:value="" />
-42-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:26:17-33
-43        </activity>
-44        <activity
-44-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:36:9-42:20
-45            android:name="com.example.simp_2.RegistroActivity"
-45-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:37:13-45
-46            android:exported="false" >
-46-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:38:13-37
+24-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:15:9-21:20
+25            android:name="com.example.simp_2.AddStudentActivity"
+25-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:16:13-47
+26            android:exported="false" >
+26-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:17:13-37
+27            <meta-data
+27-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:18:13-20:36
+28                android:name="android.app.lib_name"
+28-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:17-52
+29                android:value="" />
+29-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:20:17-33
+30        </activity>
+31        <activity
+31-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:22:9-28:20
+32            android:name="com.example.simp_2.AddClassActivity"
+32-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:23:13-45
+33            android:exported="false" >
+33-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:24:13-37
+34            <meta-data
+34-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:18:13-20:36
+35                android:name="android.app.lib_name"
+35-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:17-52
+36                android:value="" />
+36-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:20:17-33
+37        </activity>
+38        <activity
+38-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:29:9-41:20
+39            android:name="com.example.simp_2.MainActivity"
+39-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:30:13-41
+40            android:exported="true" >
+40-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:31:13-36
+41            <intent-filter>
+41-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:32:13-36:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:33:17-69
+42-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:33:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:35:17-77
+44-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:35:27-74
+45            </intent-filter>
+46
 47            <meta-data
-47-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:24:13-26:36
+47-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:18:13-20:36
 48                android:name="android.app.lib_name"
-48-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:25:17-52
+48-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:17-52
 49                android:value="" />
-49-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:26:17-33
+49-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:20:17-33
 50        </activity>
 51        <activity
-51-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:43:9-49:20
-52            android:name="com.example.simp_2.StudentsActivity"
-52-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:44:13-45
+51-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:42:9-48:20
+52            android:name="com.example.simp_2.TeacherActivity"
+52-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:43:13-44
 53            android:exported="false" >
-53-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:45:13-37
+53-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:44:13-37
 54            <meta-data
-54-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:24:13-26:36
+54-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:18:13-20:36
 55                android:name="android.app.lib_name"
-55-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:25:17-52
+55-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:17-52
 56                android:value="" />
-56-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:26:17-33
+56-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:20:17-33
 57        </activity>
-58
-59        <meta-data
-59-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:51:9-53:57
-60            android:name="preloaded_fonts"
-60-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:52:13-43
-61            android:resource="@array/preloaded_fonts" />
-61-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:53:13-54
-62
-63        <service
-63-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
-64            android:name="androidx.room.MultiInstanceInvalidationService"
-64-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
-65            android:directBootAware="true"
-65-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
-66            android:exported="false" />
-66-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
-67
-68        <provider
-68-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-69            android:name="androidx.startup.InitializationProvider"
-69-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-70            android:authorities="com.example.simp_2.androidx-startup"
-70-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-71            android:exported="false" >
-71-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-72            <meta-data
-72-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-73                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-73-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-74                android:value="androidx.startup" />
-74-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-75            <meta-data
-75-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/alumnotd/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-76                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-76-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/alumnotd/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-77                android:value="androidx.startup" />
-77-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/alumnotd/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-78        </provider>
-79    </application>
-80
-81</manifest>
+58        <activity
+58-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:49:9-55:20
+59            android:name="com.example.simp_2.RegistroActivity"
+59-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:50:13-45
+60            android:exported="false" >
+60-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:51:13-37
+61            <meta-data
+61-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:18:13-20:36
+62                android:name="android.app.lib_name"
+62-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:17-52
+63                android:value="" />
+63-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:20:17-33
+64        </activity>
+65        <activity
+65-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:56:9-62:20
+66            android:name="com.example.simp_2.StudentsActivity"
+66-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:57:13-45
+67            android:exported="false" >
+67-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:58:13-37
+68            <meta-data
+68-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:18:13-20:36
+69                android:name="android.app.lib_name"
+69-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:19:17-52
+70                android:value="" />
+70-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:20:17-33
+71        </activity>
+72
+73        <meta-data
+73-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:64:9-66:57
+74            android:name="preloaded_fonts"
+74-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:65:13-43
+75            android:resource="@array/preloaded_fonts" />
+75-->/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/AndroidManifest.xml:66:13-54
+76
+77        <service
+77-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+78            android:name="androidx.room.MultiInstanceInvalidationService"
+78-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
+79            android:directBootAware="true"
+79-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+80            android:exported="false" />
+80-->[androidx.room:room-runtime:2.4.2] /home/alumnotd/.gradle/caches/transforms-3/c4b73ab860ffaae9b45e1fa7f2c8eafd/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+81
+82        <provider
+82-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+83            android:name="androidx.startup.InitializationProvider"
+83-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+84            android:authorities="com.example.simp_2.androidx-startup"
+84-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+85            android:exported="false" >
+85-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+86            <meta-data
+86-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+87-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+88                android:value="androidx.startup" />
+88-->[androidx.emoji2:emoji2:1.2.0] /home/alumnotd/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+89            <meta-data
+89-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/alumnotd/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+90-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/alumnotd/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+91                android:value="androidx.startup" />
+91-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/alumnotd/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+92        </provider>
+93    </application>
+94
+95</manifest>
