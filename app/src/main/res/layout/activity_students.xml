@@ -11,32 +11,29 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".StudentsActivity"
-        android:background="@color/orange_pastel">
+        android:background="@color/orange_pastel"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/chosen_class"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            tools:text="2ºDAM-B"
-            android:fontFamily="@font/luckiest_guy"
-            android:textColor="@color/black"
             android:background="@drawable/edit_text_border"
+            android:fontFamily="@font/luckiest_guy"
             android:padding="4dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2ºDAM-B" />
 
         <TextView
             android:id="@+id/username_students_view"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/edit_text_border"
-            android:padding="4dp"
             android:fontFamily="@font/luckiest_guy"
+            android:padding="4dp"
             android:textColor="@color/black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,34 +42,31 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/principal_students_recycler"
-            android:layout_width="0dp"
+            android:layout_width="385dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/save_faults"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/username_students_view"
             tools:itemCount="7"
             tools:listitem="@layout/student_list" />
 
+        <!--El mensaje cuando no hay lista-->
+
         <Button
             android:id="@+id/save_faults"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/luckiest_guy"
-            android:text="SAVE"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:text="SAVE FOULTS"
+            app:layout_constraintBottom_toTopOf="@+id/new_student"
+            app:layout_constraintEnd_toEndOf="@+id/principal_students_recycler"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/principal_students_recycler" />
 
-        <!--El mensaje cuando no hay lista-->
         <TextView
             android:id="@+id/empty_students_view"
             android:layout_width="match_parent"
@@ -90,6 +84,16 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="@color/orange"
             android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/new_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new Student"
+            android:fontFamily="@font/luckiest_guy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

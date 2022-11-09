@@ -1,14 +1,19 @@
 package com.example.simp_2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.room.Room;
 
 import com.example.simp_2.databinding.ActivityStudentsBinding;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class StudentsActivity extends AppCompatActivity {
 
@@ -18,19 +23,26 @@ public class StudentsActivity extends AppCompatActivity {
         ActivityStudentsBinding binding = ActivityStudentsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        //Variables
+        Button boton =findViewById(R.id.new_student);
+
+        //Acceder BBDD
+        AppData appDatabase = Room.databaseBuilder(
+                getApplicationContext(),
+                AppData.class,
+                "Simp_BD"
+        ).allowMainThreadQueries().build();
+
+
 
         binding.principalStudentsRecycler.setLayoutManager(new LinearLayoutManager(this));
 
         ArrayList<Student> studentsList = new ArrayList<>();
-        studentsList.add(new Student(1, "Juan Fernández Hinojar"));
-        studentsList.add(new Student(2, "Ismael López Gordillo"));
-        studentsList.add(new Student(3, "Adrián Cortés de Dios"));
-        studentsList.add(new Student(4, "Alberto Ruiz Moyano"));
-        studentsList.add(new Student(5, "Alberto Ruiz Moyano"));
-        studentsList.add(new Student(6, "Alberto Ruiz Moyano"));
-        studentsList.add(new Student(7, "Alberto Ruiz Moyano"));
-        studentsList.add(new Student(8, "Alberto Ruiz Moyano"));
-        studentsList.add(new Student(9, "Alberto Ruiz Moyano"));
+
+
+        List<Classroom> clase;
+
+        //studentsList.add(new Student(1, "Juan Fernández Hinojar",2));
 
         StudentAdapter adapter = new StudentAdapter();
         binding.principalStudentsRecycler.setAdapter(adapter);
@@ -41,6 +53,14 @@ public class StudentsActivity extends AppCompatActivity {
         }else{
             binding.emptyStudentsView.setVisibility(View.GONE);
         }
+
+
+        boton.setOnClickListener(view -> {
+            Intent intent = new Intent(this, AddStudentActivity.class);
+            startActivity(intent);
+        });
+
+
 
     }
 }

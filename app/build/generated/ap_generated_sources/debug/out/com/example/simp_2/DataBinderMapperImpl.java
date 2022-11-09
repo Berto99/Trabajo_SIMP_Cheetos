@@ -1,0 +1,163 @@
+package com.example.simp_2;
+
+import android.util.SparseArray;
+import android.util.SparseIntArray;
+import android.view.View;
+import androidx.databinding.DataBinderMapper;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
+import com.example.simp_2.databinding.ActivityMainBindingImpl;
+import com.example.simp_2.databinding.ActivityMainBindingLandImpl;
+import com.example.simp_2.databinding.ActivityRegistroBindingImpl;
+import com.example.simp_2.databinding.ActivityStudentsBindingImpl;
+import com.example.simp_2.databinding.ActivityTeacherBindingImpl;
+import com.example.simp_2.databinding.PrincipalListBindingImpl;
+import com.example.simp_2.databinding.StudentListBindingImpl;
+import java.lang.IllegalArgumentException;
+import java.lang.Integer;
+import java.lang.Object;
+import java.lang.Override;
+import java.lang.RuntimeException;
+import java.lang.String;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class DataBinderMapperImpl extends DataBinderMapper {
+  private static final int LAYOUT_ACTIVITYMAIN = 1;
+
+  private static final int LAYOUT_ACTIVITYREGISTRO = 2;
+
+  private static final int LAYOUT_ACTIVITYSTUDENTS = 3;
+
+  private static final int LAYOUT_ACTIVITYTEACHER = 4;
+
+  private static final int LAYOUT_PRINCIPALLIST = 5;
+
+  private static final int LAYOUT_STUDENTLIST = 6;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
+
+  static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_registro, LAYOUT_ACTIVITYREGISTRO);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_students, LAYOUT_ACTIVITYSTUDENTS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_teacher, LAYOUT_ACTIVITYTEACHER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.principal_list, LAYOUT_PRINCIPALLIST);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.student_list, LAYOUT_STUDENTLIST);
+  }
+
+  @Override
+  public ViewDataBinding getDataBinder(DataBindingComponent component, View view, int layoutId) {
+    int localizedLayoutId = INTERNAL_LAYOUT_ID_LOOKUP.get(layoutId);
+    if(localizedLayoutId > 0) {
+      final Object tag = view.getTag();
+      if(tag == null) {
+        throw new RuntimeException("view must have a tag");
+      }
+      switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYMAIN: {
+          if ("layout/activity_main_0".equals(tag)) {
+            return new ActivityMainBindingImpl(component, view);
+          }
+          if ("layout-land/activity_main_0".equals(tag)) {
+            return new ActivityMainBindingLandImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYREGISTRO: {
+          if ("layout/activity_registro_0".equals(tag)) {
+            return new ActivityRegistroBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_registro is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYSTUDENTS: {
+          if ("layout/activity_students_0".equals(tag)) {
+            return new ActivityStudentsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_students is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYTEACHER: {
+          if ("layout/activity_teacher_0".equals(tag)) {
+            return new ActivityTeacherBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_teacher is invalid. Received: " + tag);
+        }
+        case  LAYOUT_PRINCIPALLIST: {
+          if ("layout/principal_list_0".equals(tag)) {
+            return new PrincipalListBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for principal_list is invalid. Received: " + tag);
+        }
+        case  LAYOUT_STUDENTLIST: {
+          if ("layout/student_list_0".equals(tag)) {
+            return new StudentListBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for student_list is invalid. Received: " + tag);
+        }
+      }
+    }
+    return null;
+  }
+
+  @Override
+  public ViewDataBinding getDataBinder(DataBindingComponent component, View[] views, int layoutId) {
+    if(views == null || views.length == 0) {
+      return null;
+    }
+    int localizedLayoutId = INTERNAL_LAYOUT_ID_LOOKUP.get(layoutId);
+    if(localizedLayoutId > 0) {
+      final Object tag = views[0].getTag();
+      if(tag == null) {
+        throw new RuntimeException("view must have a tag");
+      }
+      switch(localizedLayoutId) {
+      }
+    }
+    return null;
+  }
+
+  @Override
+  public int getLayoutId(String tag) {
+    if (tag == null) {
+      return 0;
+    }
+    Integer tmpVal = InnerLayoutIdLookup.sKeys.get(tag);
+    return tmpVal == null ? 0 : tmpVal;
+  }
+
+  @Override
+  public String convertBrIdToString(int localId) {
+    String tmpVal = InnerBrLookup.sKeys.get(localId);
+    return tmpVal;
+  }
+
+  @Override
+  public List<DataBinderMapper> collectDependencies() {
+    ArrayList<DataBinderMapper> result = new ArrayList<DataBinderMapper>(1);
+    result.add(new androidx.databinding.library.baseAdapters.DataBinderMapperImpl());
+    return result;
+  }
+
+  private static class InnerBrLookup {
+    static final SparseArray<String> sKeys = new SparseArray<String>(1);
+
+    static {
+      sKeys.put(0, "_all");
+    }
+  }
+
+  private static class InnerLayoutIdLookup {
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
+
+    static {
+      sKeys.put("layout/activity_main_0", com.example.simp_2.R.layout.activity_main);
+      sKeys.put("layout-land/activity_main_0", com.example.simp_2.R.layout.activity_main);
+      sKeys.put("layout/activity_registro_0", com.example.simp_2.R.layout.activity_registro);
+      sKeys.put("layout/activity_students_0", com.example.simp_2.R.layout.activity_students);
+      sKeys.put("layout/activity_teacher_0", com.example.simp_2.R.layout.activity_teacher);
+      sKeys.put("layout/principal_list_0", com.example.simp_2.R.layout.principal_list);
+      sKeys.put("layout/student_list_0", com.example.simp_2.R.layout.student_list);
+    }
+  }
+}

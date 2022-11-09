@@ -19,4 +19,6 @@ public class Usuario {
         this.nombre=nombre;
         this.apellido=apellido;
     }
+
+
 }

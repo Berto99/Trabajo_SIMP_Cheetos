@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:padding="16dp"
+        android:background="#FF9800" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ImageView
+            android:id="@+id/simp_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/simp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/luckiest_guy"
+            android:gravity="center"
+            android:text="LOG IN"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/simp_image" />
+
+        <TextView
+            android:id="@+id/username_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/log_in"
+            app:layout_constraintStart_toStartOf="@+id/log_in"
+            app:layout_constraintTop_toBottomOf="@+id/log_in"
+            android:fontFamily="@font/luckiest_guy"
+            android:drawableStart="@drawable/ic_chevron_black"
+            android:paddingStart="6dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:hint="Insert username here"
+            android:paddingStart="6dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/username_text"
+            app:layout_constraintStart_toStartOf="@+id/username_text"
+            app:layout_constraintTop_toBottomOf="@+id/username_text" />
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_chevron_black"
+            android:fontFamily="@font/luckiest_guy"
+            android:paddingStart="6dp"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/username_edit"
+            app:layout_constraintStart_toStartOf="@+id/username_edit"
+            app:layout_constraintTop_toBottomOf="@+id/username_edit" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:hint="Insert password here"
+            android:paddingStart="6dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/password_text"
+            app:layout_constraintStart_toStartOf="@+id/password_text"
+            app:layout_constraintTop_toBottomOf="@+id/password_text"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="NEXT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit" />
+
+        <TextView
+            android:id="@+id/singUp_text_logIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_chevron_black"
+            android:fontFamily="@font/luckiest_guy"
+            android:paddingStart="6dp"
+            android:text="Eres nuevo, Registrate"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/singUp_button_logIn"
+            app:layout_constraintEnd_toEndOf="@+id/password_edit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/password_edit" />
+
+        <Button
+            android:id="@+id/singUp_button_logIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:fontFamily="@font/luckiest_guy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/singUp_text_logIn"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="@+id/singUp_text_logIn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

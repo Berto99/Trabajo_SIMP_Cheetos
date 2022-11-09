@@ -11,7 +11,55 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".AddStudentActivity"
-        android:background="@color/orange_pastel">
+        android:background="@color/orange_pastel"
+        android:padding="16dp">
 
+        <TextView
+            android:id="@+id/add_student_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="ADD NEW STUDENT"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_student_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Name of the new student"
+            android:paddingStart="6dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/luckiest_guy"
+            android:drawableStart="@drawable/ic_chevron_black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_student_text" />
+
+        <EditText
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="6dp"
+            android:hint="Put the name here"
+            app:layout_constraintEnd_toEndOf="@+id/name_student_text"
+            app:layout_constraintStart_toStartOf="@+id/name_student_text"
+            app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
+
+        <Button
+            android:id="@+id/register_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

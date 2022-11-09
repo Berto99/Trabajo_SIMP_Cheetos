@@ -5,7 +5,7 @@ import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
 
 @Database(
-        entities = {Usuario.class,Classroom.class},
+        entities = {Usuario.class,Classroom.class,Student.class,Faltas.class},
         version = 1,
         exportSchema = false
 )
@@ -13,5 +13,6 @@ import androidx.room.TypeConverters;
 public abstract class AppData extends RoomDatabase {
     public abstract daoUsuario DAOusuario();
     public abstract daoClassroom DAOClassroom();
+    public abstract  daoStudent DAOStudent();
 
 }

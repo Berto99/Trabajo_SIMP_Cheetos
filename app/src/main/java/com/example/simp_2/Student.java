@@ -9,7 +9,7 @@ import java.util.Objects;
 
 @Entity
         (foreignKeys = @ForeignKey(entity = Classroom.class,parentColumns =
-        "id",childColumns = "fk_clase")
+                "id",childColumns = "fk_clase")
         )
 
 public class Student {
@@ -21,9 +21,13 @@ public class Student {
     private String name;
 
 
-    public Student(int number_list, String name) {
+    public Student(int number_list, String name, int fk) {
         this.name = name;
         this.number_list = number_list;
+        this.fk_clase=fk;
+    }
+
+    public Student() {
     }
 
     public int getNumber_list() {
@@ -32,6 +36,30 @@ public class Student {
 
     public String getName() {
         return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getFk_clase() {
+        return fk_clase;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFk_clase(int fk_clase) {
+        this.fk_clase = fk_clase;
+    }
+
+    public void setNumber_list(int number_list) {
+        this.number_list = number_list;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

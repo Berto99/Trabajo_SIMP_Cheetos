@@ -21,9 +21,14 @@ public class Classroom {
     private int grade;
     private String name;
 
-    public Classroom(int grade, String name) {
+    public Classroom(int grade, String name,String fk) {
         this.grade = grade;
         this.name = name;
+        this.fk_usuario=fk;
+    }
+
+    public Classroom() {
+
     }
 
     public int getGrade() {
@@ -40,6 +45,22 @@ public class Classroom {
 
     public void setFk_usuario(String fk_usuario) {
         this.fk_usuario = fk_usuario;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

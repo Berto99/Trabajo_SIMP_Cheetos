@@ -9,14 +9,14 @@ import java.util.Date;
 
 @Entity(
         foreignKeys = {@ForeignKey(entity = Student.class,parentColumns =
-        "id",childColumns = "fk_id_alumno"),
+                "id",childColumns = "fk_id_alumno"),
 
-        @ForeignKey(entity = Usuario.class,parentColumns =
-        "usuario",childColumns = "fk_usuario")}
+                @ForeignKey(entity = Usuario.class,parentColumns =
+                        "usuario",childColumns = "fk_usuario")}
 
 
 
-        )
+)
 
 public class Faltas {
     @PrimaryKey(autoGenerate = true)
@@ -27,4 +27,41 @@ public class Faltas {
     private Date fecha;
 
 
+    public Faltas(int fk_id_alumno, String fk_usuario, Date fecha) {
+        this.fk_id_alumno = fk_id_alumno;
+        this.fk_usuario = fk_usuario;
+        this.fecha = fecha;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getFk_id_alumno() {
+        return fk_id_alumno;
+    }
+
+    public String getFk_usuario() {
+        return fk_usuario;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFk_id_alumno(int fk_id_alumno) {
+        this.fk_id_alumno = fk_id_alumno;
+    }
+
+    public void setFk_usuario(String fk_usuario) {
+        this.fk_usuario = fk_usuario;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
 }

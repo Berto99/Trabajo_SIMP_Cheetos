@@ -12,5 +12,8 @@ public interface daoClassroom {
     List<Classroom> obtenerClase();
 
     @Insert
-    void insertarAlumno(Classroom...classrooms);
+    void insertarClase(Classroom...classrooms);
+
+    @Query("SELECT id FROM Classroom")
+    int obteneridClase();
 }

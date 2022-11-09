@@ -3,7 +3,9 @@ package com.example.simp_2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,39 +24,45 @@ public class TeacherActivity extends AppCompatActivity {
         //Cogemos el layout de activity teacher.xml
         setContentView(binding.getRoot());
 
-        //BBDD
+        //Variables
         TextView nombre_usuario= findViewById(R.id.username_view);
-        RecyclerView contenedor_clases = findViewById(R.id.principal_recycler);
+        Button boton = findViewById(R.id.button_registrer);
+        int id;
 
-
-
+        //BBDD
         AppData appDatabase = Room.databaseBuilder(
                 getApplicationContext(),
                 AppData.class,
                 "Simp_BD"
         ).allowMainThreadQueries().build();
-        recibirDato(nombre_usuario);
 
+        //Recibir dato del nombre y ponerlo en el edit text
 
         Bundle extras =getIntent().getExtras();
-        String usuario = extras.getString("dato_usuario");
+        String nombre=extras.getString("dato_nombre");
+        String apellido = extras.getString("dato_apellido");
+        String usuario15= extras.getString("dato_usuario");
+        nombre_usuario.setText(nombre+" "+apellido);
+
+
+        id = appDatabase.DAOClassroom().obteneridClase();
 
         //PARA MOSTRAR EL CONTENIDO DEL RECYCLER VIEW
         binding.principalRecycler.setLayoutManager(new LinearLayoutManager(this));
 
 
-
         //Cogemos el valor de la tabla clases
-        appDatabase.DAOClassroom().insertarAlumno(new Classroom(1,"DAMA"));
+
         List <Classroom> clase = appDatabase.DAOClassroom().obtenerClase();
 
 
-
         ArrayList<Classroom> classroomList = new ArrayList<>();
-        //Lo insertamos
-        classroomList.add(clase.get(0));
-        classroomList.add(new Classroom(1, "DAM-B"));
-        classroomList.add(new Classroom(2, "DAW-A"));
+        //Comprobaciones
+        for(int i =0; i<clase.size();i++){
+            if(clase.get(i).getFk_usuario().equals(usuario15)){
+                classroomList.add(new Classroom(clase.get(i).getGrade(),clase.get(i).getName(), clase.get(i).getFk_usuario()));
+            }
+        }
 
         ClassroomAdapter adapter = new ClassroomAdapter();
         adapter.setOnItemClickListener(classroom -> {
@@ -70,14 +78,12 @@ public class TeacherActivity extends AppCompatActivity {
             binding.emptyView.setVisibility(View.GONE);
         }
 
+        boton.setOnClickListener( view -> {
+            Intent intent = new Intent(this, AddClassActivity.class);
+            intent.putExtra("dato_usuario2",usuario15);
+            startActivity(intent);
+        });
 
     }
 
-    private void recibirDato(TextView nombre_usuario){
-        //Creamos elemento para recibir el dato de la clase main
-        Bundle extras =getIntent().getExtras();
-        String nombre=extras.getString("dato_nombre");
-        String apellido = extras.getString("dato_apellido");
-        nombre_usuario.setText(nombre+" "+apellido);
-    }
 }
