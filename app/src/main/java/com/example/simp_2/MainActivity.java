@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,7 +17,6 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         EditText pass = findViewById(R.id.password_edit);
         Button btnEntrar = findViewById(R.id.next_button);
         Button btnRegistrar = findViewById(R.id.singUp_button_logIn);
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.mps2);
 
         List<Usuario> listaUsuarios;
 
@@ -41,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
         comprobarUsuario(btnEntrar,user,pass,listaUsuarios);
 
         btnRegistrar.setOnClickListener(view -> {
+            mp.start();
             Intent intent = new Intent(this, RegistroActivity.class);
             startActivity(intent);
+
         });
 
     }

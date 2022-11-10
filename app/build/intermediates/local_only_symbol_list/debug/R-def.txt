@@ -79,6 +79,8 @@ layout student_list
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+raw mps
+raw mps2
 string app_name
 string no_class_right_now
 string no_students_right_now
