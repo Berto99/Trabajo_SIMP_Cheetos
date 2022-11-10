@@ -46,13 +46,15 @@ public class Student {
         return fk_clase;
     }
 
+    public void setFk_clase(int fk_clase) {
+        this.fk_clase = fk_clase;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setFk_clase(int fk_clase) {
-        this.fk_clase = fk_clase;
-    }
+
 
     public void setNumber_list(int number_list) {
         this.number_list = number_list;

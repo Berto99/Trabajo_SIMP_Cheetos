@@ -25,13 +25,14 @@ public class StudentsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //Variables
+
         Button boton =findViewById(R.id.new_student);
         TextView nombre_usuario=findViewById(R.id.username_students_view);
         List<Student> lista_estudiantes;
         String nombre = null;
         String apellido= null;
-        String usuario = null;
         int id = 0;
+        List<Student> students;
 
         //Acceder BBDD
         AppData appDatabase = Room.databaseBuilder(
@@ -39,24 +40,28 @@ public class StudentsActivity extends AppCompatActivity {
                 AppData.class,
                 "Simp_BD"
         ).allowMainThreadQueries().build();
+        students=appDatabase.DAOStudent().obtenerStudens();
 
         Bundle extras =getIntent().getExtras();
 
-            nombre = extras.getString("dato_nombre");
-            apellido = extras.getString("dato_apellido");
-            usuario = extras.getString("dato_usuario");
-            id = extras.getInt("id_clase");
-            nombre_usuario.setText(nombre + " " + apellido);
+                nombre = extras.getString("dato_nombre");
+                apellido = extras.getString("dato_apellido");
+                id = extras.getInt("id_clase");
+                nombre_usuario.setText(nombre + " " + apellido);
+
 
 
         binding.principalStudentsRecycler.setLayoutManager(new LinearLayoutManager(this));
 
         ArrayList<Student> studentsList = new ArrayList<>();
 
-        /*Student estudiante = new Student(1,"Sauliguera",id);
-        appDatabase.DAOStudent().insertarStudiante(estudiante);
 
-        studentsList.add(estudiante);*/
+        for (int i =0;i<students.size();i++){
+            if(students.get(i).getFk_clase()==id) {
+                studentsList.add(new Student(students.get(i).getNumber_list() ,students.get(i).getName(),students.get(i).getFk_clase()));
+            }
+        }
+
 
         StudentAdapter adapter = new StudentAdapter();
         binding.principalStudentsRecycler.setAdapter(adapter);
@@ -69,8 +74,14 @@ public class StudentsActivity extends AppCompatActivity {
         }
 
 
+        String finalApellido = apellido;
+        String finalNombre = nombre;
+        int finalId = id;
         boton.setOnClickListener(view -> {
             Intent intent = new Intent(this, AddStudentActivity.class);
+            intent.putExtra("dato_clase", finalId);
+            intent.putExtra("dato_nombre2", finalNombre);
+            intent.putExtra("dato_apellido2", finalApellido);
             startActivity(intent);
         });
 

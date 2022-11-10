@@ -16,10 +16,11 @@ public class StudentListBindingImpl extends StudentListBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.id_student_text, 1);
         sViewsWithIds.put(R.id.name_student_text, 2);
-        sViewsWithIds.put(R.id.divider, 3);
-        sViewsWithIds.put(R.id.injus_checkBox, 4);
-        sViewsWithIds.put(R.id.jus_checkBox, 5);
-        sViewsWithIds.put(R.id.retra_checkBox, 6);
+        sViewsWithIds.put(R.id.surname_student_text, 3);
+        sViewsWithIds.put(R.id.divider, 4);
+        sViewsWithIds.put(R.id.injus_checkBox, 5);
+        sViewsWithIds.put(R.id.jus_checkBox, 6);
+        sViewsWithIds.put(R.id.retra_checkBox, 7);
     }
     // views
     @NonNull
@@ -30,16 +31,17 @@ public class StudentListBindingImpl extends StudentListBinding  {
     // Inverse Binding Event Handlers
 
     public StudentListBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
     }
     private StudentListBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.view.View) bindings[3]
+            , (android.view.View) bindings[4]
             , (android.widget.TextView) bindings[1]
-            , (android.widget.CheckBox) bindings[4]
             , (android.widget.CheckBox) bindings[5]
-            , (android.widget.TextView) bindings[2]
             , (android.widget.CheckBox) bindings[6]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.CheckBox) bindings[7]
+            , (android.widget.TextView) bindings[3]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

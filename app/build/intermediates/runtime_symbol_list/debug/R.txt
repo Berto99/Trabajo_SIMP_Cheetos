@@ -2979,6 +2979,7 @@ int id submenuarrow 0x7f0a01c4
 int id submit_area 0x7f0a01c5
 int id supportScrollUp 0x7f0a01c6
 int id surname_edit 0x7f0a01c7
+int id surname_student_text 0x7f0a0219
 int id surname_text 0x7f0a01c8
 int id tabMode 0x7f0a01c9
 int id tag_accessibility_actions 0x7f0a01ca

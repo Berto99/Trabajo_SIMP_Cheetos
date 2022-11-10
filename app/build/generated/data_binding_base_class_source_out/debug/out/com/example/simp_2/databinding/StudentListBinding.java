@@ -33,9 +33,12 @@ public abstract class StudentListBinding extends ViewDataBinding {
   @NonNull
   public final CheckBox retraCheckBox;
 
+  @NonNull
+  public final TextView surnameStudentText;
+
   protected StudentListBinding(Object _bindingComponent, View _root, int _localFieldCount,
       View divider, TextView idStudentText, CheckBox injusCheckBox, CheckBox jusCheckBox,
-      TextView nameStudentText, CheckBox retraCheckBox) {
+      TextView nameStudentText, CheckBox retraCheckBox, TextView surnameStudentText) {
     super(_bindingComponent, _root, _localFieldCount);
     this.divider = divider;
     this.idStudentText = idStudentText;
@@ -43,6 +46,7 @@ public abstract class StudentListBinding extends ViewDataBinding {
     this.jusCheckBox = jusCheckBox;
     this.nameStudentText = nameStudentText;
     this.retraCheckBox = retraCheckBox;
+    this.surnameStudentText = surnameStudentText;
   }
 
   @NonNull

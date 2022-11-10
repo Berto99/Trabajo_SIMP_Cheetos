@@ -75,9 +75,7 @@ public class TeacherActivity extends AppCompatActivity {
             intent.putExtra("dato_nombre", finalNombre1);
             intent.putExtra("dato_apellido", finalApellido1);
             id.set(appDatabase.DAOClassroom().obtenerClaseid(classroom.getName()));
-            intent.putExtra("id_clase", id);
-
-            Toast.makeText(this, "ERROR:La clase es "+id, Toast.LENGTH_SHORT).show();
+            intent.putExtra("id_clase", id.get());
             startActivity(intent);
         });
         binding.principalRecycler.setAdapter(adapter);

@@ -61,6 +61,7 @@ id singUp_text
 id singUp_text_logIn
 id student_name
 id surname_edit
+id surname_student_text
 id surname_text
 id username_edit
 id username_edit_singUp

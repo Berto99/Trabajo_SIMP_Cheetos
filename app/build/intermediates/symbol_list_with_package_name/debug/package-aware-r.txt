@@ -2980,6 +2980,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id surname_edit
+id surname_student_text
 id surname_text
 id tabMode
 id tag_accessibility_actions
