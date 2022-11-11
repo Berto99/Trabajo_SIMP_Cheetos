@@ -15,6 +15,7 @@ color teal_700
 color white
 drawable edit_text_border
 drawable edit_text_border_dark
+drawable ic_baseline_keyboard_double_arrow_left_24
 drawable ic_chevron_black
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -23,6 +24,9 @@ font luckiest_guy
 id add_class_text
 id add_student_text
 id arrow_image
+id backButton_singUp
+id backButton_students
+id backButton_teacher
 id button_registrer
 id chosen_class
 id class_text

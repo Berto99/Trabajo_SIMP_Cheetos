@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,7 @@ public class TeacherActivity extends AppCompatActivity {
         //Variables
         TextView nombre_usuario= findViewById(R.id.username_view);
         Button boton = findViewById(R.id.button_registrer);
+        ImageButton back = findViewById(R.id.backButton_teacher);
         String nombre = null;
         String apellido= null;
         String usuario = null;
@@ -65,6 +68,8 @@ public class TeacherActivity extends AppCompatActivity {
             }
         }
 
+
+        //pasar al activity de student
         ClassroomAdapter adapter = new ClassroomAdapter();
         String finalUsuario1 = usuario;
         String finalNombre1 = nombre;
@@ -87,10 +92,6 @@ public class TeacherActivity extends AppCompatActivity {
             binding.emptyView.setVisibility(View.GONE);
         }
 
-        //pasar al activity de student
-
-
-
         //Variable final de usuario para el intent
         String finalUsuario = usuario;
         String finalNombre = nombre;
@@ -103,6 +104,12 @@ public class TeacherActivity extends AppCompatActivity {
             intent.putExtra("dato_nombre2", finalNombre);
             intent.putExtra("dato_apellido2", finalApellido);
 
+            startActivity(intent);
+        });
+
+        //Acción del bortón para atrás
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
 

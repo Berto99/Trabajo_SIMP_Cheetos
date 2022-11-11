@@ -20,6 +20,7 @@ public class ActivityStudentsBindingImpl extends ActivityStudentsBinding  {
         sViewsWithIds.put(R.id.save_faults, 4);
         sViewsWithIds.put(R.id.empty_students_view, 5);
         sViewsWithIds.put(R.id.new_student, 6);
+        sViewsWithIds.put(R.id.backButton_students, 7);
     }
     // views
     @NonNull
@@ -30,10 +31,12 @@ public class ActivityStudentsBindingImpl extends ActivityStudentsBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityStudentsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
     }
     private ActivityStudentsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , null
+            , (android.widget.ImageButton) bindings[7]
             , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[5]
             , (android.widget.Button) bindings[6]

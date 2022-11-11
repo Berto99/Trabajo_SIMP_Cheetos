@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class RegistroActivity extends AppCompatActivity {
         EditText nombre = findViewById(R.id.name_edit);
         EditText apellido = findViewById(R.id.surname_edit);
         Button boton = findViewById(R.id.singUp_boton);
+        ImageButton back = findViewById(R.id.backButton_singUp);
 
         List<Usuario> listaUsuarios;
 
@@ -60,6 +62,11 @@ public class RegistroActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             }
+        });
+
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         });
 
 

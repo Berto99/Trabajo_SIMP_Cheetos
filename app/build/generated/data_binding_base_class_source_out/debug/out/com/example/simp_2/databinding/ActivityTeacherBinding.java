@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +17,9 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityTeacherBinding extends ViewDataBinding {
+  @NonNull
+  public final ImageButton backButtonTeacher;
+
   @NonNull
   public final Button buttonRegistrer;
 
@@ -32,9 +36,10 @@ public abstract class ActivityTeacherBinding extends ViewDataBinding {
   public final TextView usernameView;
 
   protected ActivityTeacherBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button buttonRegistrer, TextView classes, TextView emptyView, RecyclerView principalRecycler,
-      TextView usernameView) {
+      ImageButton backButtonTeacher, Button buttonRegistrer, TextView classes, TextView emptyView,
+      RecyclerView principalRecycler, TextView usernameView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.backButtonTeacher = backButtonTeacher;
     this.buttonRegistrer = buttonRegistrer;
     this.classes = classes;
     this.emptyView = emptyView;

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +29,7 @@ public class StudentsActivity extends AppCompatActivity {
 
         Button boton =findViewById(R.id.new_student);
         TextView nombre_usuario=findViewById(R.id.username_students_view);
+        ImageButton back = findViewById(R.id.backButton_students);
         List<Student> lista_estudiantes;
         String nombre = null;
         String apellido= null;
@@ -85,6 +87,11 @@ public class StudentsActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        //Acción de volver para atrás
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(this, TeacherActivity.class);
+            startActivity(intent);
+        });
 
 
     }

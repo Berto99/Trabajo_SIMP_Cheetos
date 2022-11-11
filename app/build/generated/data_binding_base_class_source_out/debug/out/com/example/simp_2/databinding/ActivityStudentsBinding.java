@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +17,42 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityStudentsBinding extends ViewDataBinding {
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   *   <li>layout-land-night/</li>
+   *   <li>layout-night/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageButton backButtonSingUp;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   *   <li>layout-land-night/</li>
+   *   <li>layout-night/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageButton backButtonStudents;
+
   @NonNull
   public final TextView chosenClass;
 
@@ -35,9 +72,12 @@ public abstract class ActivityStudentsBinding extends ViewDataBinding {
   public final TextView usernameStudentsView;
 
   protected ActivityStudentsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView chosenClass, TextView emptyStudentsView, Button newStudent,
-      RecyclerView principalStudentsRecycler, Button saveFaults, TextView usernameStudentsView) {
+      ImageButton backButtonSingUp, ImageButton backButtonStudents, TextView chosenClass,
+      TextView emptyStudentsView, Button newStudent, RecyclerView principalStudentsRecycler,
+      Button saveFaults, TextView usernameStudentsView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.backButtonSingUp = backButtonSingUp;
+    this.backButtonStudents = backButtonStudents;
     this.chosenClass = chosenClass;
     this.emptyStudentsView = emptyStudentsView;
     this.newStudent = newStudent;

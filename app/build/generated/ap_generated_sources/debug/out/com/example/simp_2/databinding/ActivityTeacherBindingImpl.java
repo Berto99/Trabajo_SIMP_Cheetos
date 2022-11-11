@@ -19,6 +19,7 @@ public class ActivityTeacherBindingImpl extends ActivityTeacherBinding  {
         sViewsWithIds.put(R.id.principal_recycler, 3);
         sViewsWithIds.put(R.id.empty_view, 4);
         sViewsWithIds.put(R.id.button_registrer, 5);
+        sViewsWithIds.put(R.id.backButton_teacher, 6);
     }
     // views
     @NonNull
@@ -29,10 +30,11 @@ public class ActivityTeacherBindingImpl extends ActivityTeacherBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityTeacherBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private ActivityTeacherBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.ImageButton) bindings[6]
             , (android.widget.Button) bindings[5]
             , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[4]

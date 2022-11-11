@@ -24,6 +24,7 @@ public class ActivityRegistroBindingImpl extends ActivityRegistroBinding  {
         sViewsWithIds.put(R.id.surname_text, 8);
         sViewsWithIds.put(R.id.surname_edit, 9);
         sViewsWithIds.put(R.id.singUp_boton, 10);
+        sViewsWithIds.put(R.id.backButton_singUp, 11);
     }
     // views
     @NonNull
@@ -34,10 +35,11 @@ public class ActivityRegistroBindingImpl extends ActivityRegistroBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityRegistroBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
     }
     private ActivityRegistroBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.ImageButton) bindings[11]
             , (android.widget.EditText) bindings[7]
             , (android.widget.TextView) bindings[6]
             , (android.widget.EditText) bindings[5]

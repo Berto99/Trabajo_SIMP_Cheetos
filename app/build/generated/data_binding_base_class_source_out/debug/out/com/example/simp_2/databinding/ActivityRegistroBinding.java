@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +17,9 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityRegistroBinding extends ViewDataBinding {
+  @NonNull
+  public final ImageButton backButtonSingUp;
+
   @NonNull
   public final EditText nameEdit;
 
@@ -47,10 +51,12 @@ public abstract class ActivityRegistroBinding extends ViewDataBinding {
   public final TextView usernameTextSingUp;
 
   protected ActivityRegistroBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      EditText nameEdit, TextView nameText, EditText passwordEditSingUp,
-      TextView passwordTextSingUp, Button singUpBoton, TextView singUpText, EditText surnameEdit,
-      TextView surnameText, EditText usernameEditSingUp, TextView usernameTextSingUp) {
+      ImageButton backButtonSingUp, EditText nameEdit, TextView nameText,
+      EditText passwordEditSingUp, TextView passwordTextSingUp, Button singUpBoton,
+      TextView singUpText, EditText surnameEdit, TextView surnameText, EditText usernameEditSingUp,
+      TextView usernameTextSingUp) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.backButtonSingUp = backButtonSingUp;
     this.nameEdit = nameEdit;
     this.nameText = nameText;
     this.passwordEditSingUp = passwordEditSingUp;
