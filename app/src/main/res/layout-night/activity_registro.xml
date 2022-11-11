@@ -18,7 +18,7 @@
             android:id="@+id/singUp_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/luckiest_guy"
             android:gravity="center"
             android:text="SING UP"
@@ -153,6 +153,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/backButton_singUp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/orange_pastel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

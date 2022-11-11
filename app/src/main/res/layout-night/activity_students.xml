@@ -18,13 +18,14 @@
             android:id="@+id/chosen_class"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/edit_text_border_dark"
-            android:textColor="@color/white"
             android:fontFamily="@font/luckiest_guy"
             android:padding="4dp"
+            android:textColor="@color/white"
             android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_students_view"
             tools:text="2ºDAM-B" />
 
         <TextView
@@ -49,7 +50,7 @@
             app:layout_constraintBottom_toTopOf="@+id/save_faults"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username_students_view"
+            app:layout_constraintTop_toBottomOf="@+id/chosen_class"
             tools:itemCount="7"
             tools:listitem="@layout/student_list" />
 
@@ -94,6 +95,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/backButton_singUp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/orange_pastel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
