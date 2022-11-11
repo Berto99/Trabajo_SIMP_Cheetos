@@ -25,6 +25,7 @@ public class AddStudentActivity extends AppCompatActivity {
         String nombre = null;
         String apellido = null;
         int id = 0;
+        String usuario;
 
         //Acceder BBDD
         AppData appDatabase = Room.databaseBuilder(
@@ -38,6 +39,8 @@ public class AddStudentActivity extends AppCompatActivity {
         nombre=extras.getString("dato_nombre2");
         apellido=extras.getString("dato_apellido2");
         id=extras.getInt("dato_clase");
+        usuario= extras.getString("dato_usuario");
+
 
         AtomicReference<String> nombreAux= new AtomicReference<>(nombre);
         AtomicReference<String> apellidoAux= new AtomicReference<>(apellido);
@@ -70,6 +73,7 @@ public class AddStudentActivity extends AppCompatActivity {
                 intent.putExtra("dato_nombre", finalNombre);
                 intent.putExtra("dato_apellido", finalApellido);
                 intent.putExtra("id_clase", finalId);
+                intent.putExtra("dato_usuario",usuario);
                 startActivity(intent);
             }
 

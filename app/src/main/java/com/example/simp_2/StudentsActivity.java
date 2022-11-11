@@ -35,6 +35,7 @@ public class StudentsActivity extends AppCompatActivity {
         String apellido= null;
         int id = 0;
         List<Student> students;
+        String usuario ;
 
         //Acceder BBDD
         AppData appDatabase = Room.databaseBuilder(
@@ -49,6 +50,7 @@ public class StudentsActivity extends AppCompatActivity {
                 nombre = extras.getString("dato_nombre");
                 apellido = extras.getString("dato_apellido");
                 id = extras.getInt("id_clase");
+                usuario=extras.getString("dato_usuario");
                 nombre_usuario.setText(nombre + " " + apellido);
 
 
@@ -84,15 +86,20 @@ public class StudentsActivity extends AppCompatActivity {
             intent.putExtra("dato_clase", finalId);
             intent.putExtra("dato_nombre2", finalNombre);
             intent.putExtra("dato_apellido2", finalApellido);
+            intent.putExtra("dato_usuario",usuario);
             startActivity(intent);
         });
 
         //Acción de volver para atrás
+
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, TeacherActivity.class);
+            intent.putExtra("dato_nombre", finalNombre);
+            intent.putExtra("dato_apellido",finalApellido);
+            intent.putExtra("dato_usuario",usuario);
             startActivity(intent);
-        });
 
+        });
 
     }
 }
