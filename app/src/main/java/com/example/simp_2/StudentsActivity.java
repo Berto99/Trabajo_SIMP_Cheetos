@@ -100,6 +100,5 @@ public class StudentsActivity extends AppCompatActivity {
             startActivity(intent);
 
         });
-
     }
 }
