@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TotalActivity"
+        android:background="@color/orange_pastel"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imagenCheetos"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chester_cheetos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="Nombre del alumno"
+            android:textColor="@color/black"
+            android:fontFamily="@font/luckiest_guy"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenCheetos" />
+
+        <TextView
+            android:id="@+id/total_foults_textt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="Tiene un total de X faltas"
+            android:textColor="@color/black"
+            android:fontFamily="@font/luckiest_guy"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/name_total"
+            app:layout_constraintStart_toStartOf="@+id/name_total"
+            app:layout_constraintTop_toBottomOf="@+id/name_total" />
+
+        <ImageButton
+            android:id="@+id/backButton_total"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/orange_pastel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

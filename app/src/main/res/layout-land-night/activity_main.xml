@@ -16,9 +16,9 @@
 
         <ImageView
             android:id="@+id/simp_image"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/simp"
+            android:src="@drawable/simp_logo"
             app:layout_constraintEnd_toStartOf="@+id/username_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/log_in" />
