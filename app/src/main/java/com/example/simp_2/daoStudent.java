@@ -17,4 +17,8 @@ public interface daoStudent {
     @Query("SELECT MAX(number_list) from Student where fk_clase =:fk_clase")
     int obtenernumLista(int fk_clase);
 
+
+
+
+
 }

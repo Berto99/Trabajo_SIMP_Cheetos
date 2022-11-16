@@ -13,6 +13,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable chester_cheetos
 drawable edit_text_border
 drawable edit_text_border_dark
 drawable ic_baseline_keyboard_double_arrow_left_24
@@ -20,6 +21,7 @@ drawable ic_chevron_black
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable simp
+drawable simp_logo
 font luckiest_guy
 id add_class_text
 id add_student_text
@@ -38,6 +40,7 @@ id grade_class_input
 id grade_class_text
 id grade_text
 id id_student_text
+id imagenCheetos
 id injus_checkBox
 id jus_checkBox
 id log_in
@@ -46,6 +49,7 @@ id name_class_text
 id name_edit
 id name_student_text
 id name_text
+id name_total
 id new_student
 id next_button
 id password_edit
@@ -67,6 +71,7 @@ id student_name
 id surname_edit
 id surname_student_text
 id surname_text
+id total_foults_textt
 id username_edit
 id username_edit_singUp
 id username_students_view
@@ -79,6 +84,7 @@ layout activity_main
 layout activity_registro
 layout activity_students
 layout activity_teacher
+layout activity_total
 layout principal_list
 layout student_list
 mipmap ic_launcher

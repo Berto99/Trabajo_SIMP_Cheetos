@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout-land/activity_teacher.xml",
+        "source": "com.example.simp_2.app-main-36:/layout-land/activity_teacher.xml"
+    },
+    {
         "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout-land/activity_students.xml",
         "source": "com.example.simp_2.app-main-36:/layout-land/activity_students.xml"
     },

@@ -21,7 +21,10 @@ import com.example.simp_2.databinding.ActivityStudentsBindingLandImpl;
 import com.example.simp_2.databinding.ActivityStudentsBindingLandNightImpl;
 import com.example.simp_2.databinding.ActivityStudentsBindingNightImpl;
 import com.example.simp_2.databinding.ActivityTeacherBindingImpl;
+import com.example.simp_2.databinding.ActivityTeacherBindingLandImpl;
+import com.example.simp_2.databinding.ActivityTeacherBindingLandNightImpl;
 import com.example.simp_2.databinding.ActivityTeacherBindingNightImpl;
+import com.example.simp_2.databinding.ActivityTotalBindingImpl;
 import com.example.simp_2.databinding.PrincipalListBindingImpl;
 import com.example.simp_2.databinding.StudentListBindingImpl;
 import com.example.simp_2.databinding.StudentListBindingLandImpl;
@@ -48,11 +51,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYTEACHER = 6;
 
-  private static final int LAYOUT_PRINCIPALLIST = 7;
+  private static final int LAYOUT_ACTIVITYTOTAL = 7;
 
-  private static final int LAYOUT_STUDENTLIST = 8;
+  private static final int LAYOUT_PRINCIPALLIST = 8;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(8);
+  private static final int LAYOUT_STUDENTLIST = 9;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(9);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_add_class, LAYOUT_ACTIVITYADDCLASS);
@@ -61,6 +66,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_registro, LAYOUT_ACTIVITYREGISTRO);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_students, LAYOUT_ACTIVITYSTUDENTS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_teacher, LAYOUT_ACTIVITYTEACHER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.activity_total, LAYOUT_ACTIVITYTOTAL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.principal_list, LAYOUT_PRINCIPALLIST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.simp_2.R.layout.student_list, LAYOUT_STUDENTLIST);
   }
@@ -132,13 +138,25 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           throw new IllegalArgumentException("The tag for activity_students is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYTEACHER: {
+          if ("layout-land/activity_teacher_0".equals(tag)) {
+            return new ActivityTeacherBindingLandImpl(component, view);
+          }
           if ("layout/activity_teacher_0".equals(tag)) {
             return new ActivityTeacherBindingImpl(component, view);
           }
           if ("layout-night/activity_teacher_0".equals(tag)) {
             return new ActivityTeacherBindingNightImpl(component, view);
           }
+          if ("layout-land-night/activity_teacher_0".equals(tag)) {
+            return new ActivityTeacherBindingLandNightImpl(component, view);
+          }
           throw new IllegalArgumentException("The tag for activity_teacher is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYTOTAL: {
+          if ("layout/activity_total_0".equals(tag)) {
+            return new ActivityTotalBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_total is invalid. Received: " + tag);
         }
         case  LAYOUT_PRINCIPALLIST: {
           if ("layout/principal_list_0".equals(tag)) {
@@ -208,7 +226,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(19);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(22);
 
     static {
       sKeys.put("layout/activity_add_class_0", com.example.simp_2.R.layout.activity_add_class);
@@ -225,8 +243,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout-night/activity_students_0", com.example.simp_2.R.layout.activity_students);
       sKeys.put("layout/activity_students_0", com.example.simp_2.R.layout.activity_students);
       sKeys.put("layout-land/activity_students_0", com.example.simp_2.R.layout.activity_students);
+      sKeys.put("layout-land/activity_teacher_0", com.example.simp_2.R.layout.activity_teacher);
       sKeys.put("layout/activity_teacher_0", com.example.simp_2.R.layout.activity_teacher);
       sKeys.put("layout-night/activity_teacher_0", com.example.simp_2.R.layout.activity_teacher);
+      sKeys.put("layout-land-night/activity_teacher_0", com.example.simp_2.R.layout.activity_teacher);
+      sKeys.put("layout/activity_total_0", com.example.simp_2.R.layout.activity_total);
       sKeys.put("layout/principal_list_0", com.example.simp_2.R.layout.principal_list);
       sKeys.put("layout-land/student_list_0", com.example.simp_2.R.layout.student_list);
       sKeys.put("layout/student_list_0", com.example.simp_2.R.layout.student_list);

@@ -14,5 +14,5 @@ public abstract class AppData extends RoomDatabase {
     public abstract daoUsuario DAOusuario();
     public abstract daoClassroom DAOClassroom();
     public abstract  daoStudent DAOStudent();
-
+    public abstract daoFaltas DAOFaltas();
 }

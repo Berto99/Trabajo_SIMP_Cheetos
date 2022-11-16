@@ -49,14 +49,6 @@
             app:layout_constraintStart_toStartOf="@+id/name_total"
             app:layout_constraintTop_toBottomOf="@+id/name_total" />
 
-        <ImageButton
-            android:id="@+id/backButton_total"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@color/orange_pastel"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,6 +36,8 @@ public final class AppData_Impl extends AppData {
 
   private volatile daoStudent _daoStudent;
 
+  private volatile daoFaltas _daoFaltas;
+
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
@@ -208,6 +210,7 @@ public final class AppData_Impl extends AppData {
     _typeConvertersMap.put(daoUsuario.class, daoUsuario_Impl.getRequiredConverters());
     _typeConvertersMap.put(daoClassroom.class, daoClassroom_Impl.getRequiredConverters());
     _typeConvertersMap.put(daoStudent.class, daoStudent_Impl.getRequiredConverters());
+    _typeConvertersMap.put(daoFaltas.class, daoFaltas_Impl.getRequiredConverters());
     return _typeConvertersMap;
   }
 
@@ -261,6 +264,20 @@ public final class AppData_Impl extends AppData {
           _daoStudent = new daoStudent_Impl(this);
         }
         return _daoStudent;
+      }
+    }
+  }
+
+  @Override
+  public daoFaltas DAOFaltas() {
+    if (_daoFaltas != null) {
+      return _daoFaltas;
+    } else {
+      synchronized(this) {
+        if(_daoFaltas == null) {
+          _daoFaltas = new daoFaltas_Impl(this);
+        }
+        return _daoFaltas;
       }
     }
   }

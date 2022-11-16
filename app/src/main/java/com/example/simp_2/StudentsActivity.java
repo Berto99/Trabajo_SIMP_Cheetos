@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -16,6 +16,7 @@ import com.example.simp_2.databinding.ActivityStudentsBinding;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class StudentsActivity extends AppCompatActivity {
 
@@ -30,12 +31,14 @@ public class StudentsActivity extends AppCompatActivity {
         Button boton =findViewById(R.id.new_student);
         TextView nombre_usuario=findViewById(R.id.username_students_view);
         ImageButton back = findViewById(R.id.backButton_students);
+        Button boton_faltas = findViewById(R.id.new_student);
         List<Student> lista_estudiantes;
         String nombre = null;
         String apellido= null;
         int id = 0;
         List<Student> students;
-        String usuario ;
+        String usuario;
+        CheckBox injus = findViewById(R.id.injus_checkBox);
 
         //Acceder BBDD
         AppData appDatabase = Room.databaseBuilder(
@@ -53,12 +56,9 @@ public class StudentsActivity extends AppCompatActivity {
                 usuario=extras.getString("dato_usuario");
                 nombre_usuario.setText(nombre + " " + apellido);
 
-
-
         binding.principalStudentsRecycler.setLayoutManager(new LinearLayoutManager(this));
 
         ArrayList<Student> studentsList = new ArrayList<>();
-
 
         for (int i =0;i<students.size();i++){
             if(students.get(i).getFk_clase()==id) {
@@ -66,10 +66,21 @@ public class StudentsActivity extends AppCompatActivity {
             }
         }
 
-
         StudentAdapter adapter = new StudentAdapter();
         binding.principalStudentsRecycler.setAdapter(adapter);
         adapter.submitList(studentsList);
+        String alumno;
+        int contador=0;
+        adapter.setOnItemClickListener(student -> {
+            Intent intent = new Intent(this, TotalActivity.class);
+            intent.putExtra("dato_alumno", student.getName());
+            boton_faltas.setOnClickListener(view -> {
+                if(injus.isChecked()){
+                    appDatabase.DAOFaltas().insertarFalta(new Faltas(student.getId(),usuario,));
+                }
+            });
+            startActivity(intent);
+        });
 
         if (studentsList.isEmpty()) {
             binding.emptyStudentsView.setVisibility(View.VISIBLE);
@@ -83,15 +94,15 @@ public class StudentsActivity extends AppCompatActivity {
         int finalId = id;
         boton.setOnClickListener(view -> {
             Intent intent = new Intent(this, AddStudentActivity.class);
-            intent.putExtra("dato_clase", finalId);
-            intent.putExtra("dato_nombre2", finalNombre);
-            intent.putExtra("dato_apellido2", finalApellido);
-            intent.putExtra("dato_usuario",usuario);
             startActivity(intent);
+
         });
 
-        //Acción de volver para atrás
 
+        //Boton para las faltas
+
+
+        //Acción de volver para atrás
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, TeacherActivity.class);
             intent.putExtra("dato_nombre", finalNombre);

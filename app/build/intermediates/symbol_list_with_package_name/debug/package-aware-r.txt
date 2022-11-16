@@ -2458,6 +2458,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable chester_cheetos
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2520,6 +2521,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable simp
+drawable simp_logo
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2768,6 +2770,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imagenCheetos
 id immediateStop
 id included
 id info
@@ -2852,6 +2855,7 @@ id name_class_text
 id name_edit
 id name_student_text
 id name_text
+id name_total
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3028,6 +3032,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id total_foults_textt
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3164,6 +3169,7 @@ layout activity_main
 layout activity_registro
 layout activity_students
 layout activity_teacher
+layout activity_total
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
