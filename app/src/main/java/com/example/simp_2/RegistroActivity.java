@@ -1,6 +1,7 @@
 package com.example.simp_2;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,7 @@ public class RegistroActivity extends AppCompatActivity {
         EditText apellido = findViewById(R.id.surname_edit);
         Button boton = findViewById(R.id.singUp_boton);
         ImageButton back = findViewById(R.id.backButton_singUp);
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.check);
 
         List<Usuario> listaUsuarios;
 
@@ -58,6 +60,7 @@ public class RegistroActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(this, "Registro correcto", Toast.LENGTH_SHORT).show();
                     appDatabase.DAOusuario().insertarUsuario(new Usuario(usu, pass, nom, apell));
+                    mp.start();
                     Intent intent = new Intent(this, MainActivity.class);
                     startActivity(intent);
                 }
