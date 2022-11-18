@@ -36,9 +36,9 @@ public class AddStudentActivity extends AppCompatActivity {
 
         //Datos del Student Activity
         Bundle extras =getIntent().getExtras();
-        nombre=extras.getString("dato_nombre2");
-        apellido=extras.getString("dato_apellido2");
-        id=extras.getInt("dato_clase");
+        nombre=extras.getString("dato_nombre");
+        apellido=extras.getString("dato_apellido");
+        id=extras.getInt("id_clase");
         usuario= extras.getString("dato_usuario");
 
 

@@ -30,8 +30,6 @@ public class StudentsActivity extends AppCompatActivity {
         Button boton =findViewById(R.id.new_student);
         TextView nombre_usuario=findViewById(R.id.username_students_view);
         ImageButton back = findViewById(R.id.backButton_students);
-        Button boton_faltas = findViewById(R.id.new_student);
-        List<Student> lista_estudiantes;
         String nombre = null;
         String apellido= null;
         int id = 0;
@@ -69,16 +67,10 @@ public class StudentsActivity extends AppCompatActivity {
         StudentAdapter adapter = new StudentAdapter();
         binding.principalStudentsRecycler.setAdapter(adapter);
         adapter.submitList(studentsList);
-        String alumno;
-        int contador=0;
+
         adapter.setOnItemClickListener(student -> {
             Intent intent = new Intent(this, TotalActivity.class);
             intent.putExtra("dato_alumno", student.getName());
-            boton_faltas.setOnClickListener(view -> {
-                if(injus.isChecked()){
-                    appDatabase.DAOFaltas().insertarFalta(new Faltas(student.getId()));
-                }
-            });
             startActivity(intent);
         });
 
@@ -93,8 +85,11 @@ public class StudentsActivity extends AppCompatActivity {
         int finalId = id;
         boton.setOnClickListener(view -> {
             Intent intent = new Intent(this, AddStudentActivity.class);
+            intent.putExtra("dato_nombre", finalNombre);
+            intent.putExtra("dato_apellido",finalApellido);
+            intent.putExtra("dato_usuario",usuario);
+            intent.putExtra("id_clase",finalId);
             startActivity(intent);
-
         });
 
         //BOTÓN DE VOLVER PARA ATRÁS
