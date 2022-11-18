@@ -23,6 +23,7 @@
             android:fontFamily="@font/luckiest_guy"
             android:textColor="@color/black"
             android:textSize="40dp"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/luckiest_guy"
             android:text="@string/add_new_student"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="40dp"
             app:layout_constraintEnd_toEndOf="parent"

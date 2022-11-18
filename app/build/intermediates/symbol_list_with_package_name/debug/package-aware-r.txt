@@ -2617,7 +2617,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id backButton_singUp
+id backButton_singIn
 id backButton_students
 id backButton_teacher
 id barrier
@@ -3416,8 +3416,6 @@ string save_new_class
 string save_new_student
 string search_menu_title
 string sign_in
-string sing_up
-string sing_up_button
 string status_bar_notification_info_overflow
 string surname
 string username

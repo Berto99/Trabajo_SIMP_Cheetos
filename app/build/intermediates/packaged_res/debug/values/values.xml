@@ -52,8 +52,6 @@
     <string name="save_new_class">Save</string>
     <string name="save_new_student">SAVE</string>
     <string name="sign_in">SING IN</string>
-    <string name="sing_up">SING UP</string>
-    <string name="sing_up_button">SING UP</string>
     <string name="surname">Surname</string>
     <string name="username">Username</string>
     <style name="Theme.SIMP_2" parent="Theme.MaterialComponents.DayNight.NoActionBar">

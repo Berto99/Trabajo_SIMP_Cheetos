@@ -2616,7 +2616,7 @@ int id auto 0x7f0a0056
 int id autoComplete 0x7f0a0057
 int id autoCompleteToEnd 0x7f0a0058
 int id autoCompleteToStart 0x7f0a0059
-int id backButton_singUp 0x7f0a005a
+int id backButton_singIn 0x7f0a005a
 int id backButton_students 0x7f0a005b
 int id backButton_teacher 0x7f0a005c
 int id barrier 0x7f0a005d
@@ -3415,11 +3415,9 @@ int string save_new_class 0x7f11008f
 int string save_new_student 0x7f110090
 int string search_menu_title 0x7f110091
 int string sign_in 0x7f110092
-int string sing_up 0x7f110093
-int string sing_up_button 0x7f110094
-int string status_bar_notification_info_overflow 0x7f110095
-int string surname 0x7f110096
-int string username 0x7f110097
+int string status_bar_notification_info_overflow 0x7f110093
+int string surname 0x7f110094
+int string username 0x7f110095
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style AndroidThemeColorAccentYellow 0x7f120002

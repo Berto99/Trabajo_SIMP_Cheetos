@@ -33,7 +33,7 @@ public abstract class ActivityStudentsBinding extends ViewDataBinding {
    * </ul>
    */
   @Nullable
-  public final ImageButton backButtonSingUp;
+  public final ImageButton backButtonSingIn;
 
   /**
    * This binding is not available in all configurations.
@@ -72,11 +72,11 @@ public abstract class ActivityStudentsBinding extends ViewDataBinding {
   public final TextView usernameStudentsView;
 
   protected ActivityStudentsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton backButtonSingUp, ImageButton backButtonStudents, TextView chosenClass,
+      ImageButton backButtonSingIn, ImageButton backButtonStudents, TextView chosenClass,
       TextView emptyStudentsView, Button newStudent, RecyclerView principalStudentsRecycler,
       Button saveFaults, TextView usernameStudentsView) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.backButtonSingUp = backButtonSingUp;
+    this.backButtonSingIn = backButtonSingIn;
     this.backButtonStudents = backButtonStudents;
     this.chosenClass = chosenClass;
     this.emptyStudentsView = emptyStudentsView;

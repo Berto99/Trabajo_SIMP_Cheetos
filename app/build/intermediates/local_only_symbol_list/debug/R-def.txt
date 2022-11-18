@@ -26,7 +26,7 @@ font luckiest_guy
 id add_class_text
 id add_student_text
 id arrow_image
-id backButton_singUp
+id backButton_singIn
 id backButton_students
 id backButton_teacher
 id button_registrer
@@ -119,8 +119,6 @@ string save_foults_button
 string save_new_class
 string save_new_student
 string sign_in
-string sing_up
-string sing_up_button
 string surname
 string username
 style Theme.SIMP_2

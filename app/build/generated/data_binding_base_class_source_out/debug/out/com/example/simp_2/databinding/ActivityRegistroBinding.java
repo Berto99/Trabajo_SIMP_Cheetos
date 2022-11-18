@@ -18,7 +18,7 @@ import java.lang.Object;
 
 public abstract class ActivityRegistroBinding extends ViewDataBinding {
   @NonNull
-  public final ImageButton backButtonSingUp;
+  public final ImageButton backButtonSingIn;
 
   @NonNull
   public final EditText nameEdit;
@@ -51,12 +51,12 @@ public abstract class ActivityRegistroBinding extends ViewDataBinding {
   public final TextView usernameTextSingUp;
 
   protected ActivityRegistroBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton backButtonSingUp, EditText nameEdit, TextView nameText,
+      ImageButton backButtonSingIn, EditText nameEdit, TextView nameText,
       EditText passwordEditSingUp, TextView passwordTextSingUp, Button singUpBoton,
       TextView singUpText, EditText surnameEdit, TextView surnameText, EditText usernameEditSingUp,
       TextView usernameTextSingUp) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.backButtonSingUp = backButtonSingUp;
+    this.backButtonSingIn = backButtonSingIn;
     this.nameEdit = nameEdit;
     this.nameText = nameText;
     this.passwordEditSingUp = passwordEditSingUp;

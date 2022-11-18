@@ -91,7 +91,8 @@
             android:paddingStart="6dp"
             app:layout_constraintBottom_toBottomOf="@+id/simp_image"
             app:layout_constraintEnd_toEndOf="@+id/username_text"
-            app:layout_constraintStart_toStartOf="@+id/username_edit" />
+            app:layout_constraintStart_toStartOf="@+id/username_edit"
+            android:inputType="textPassword"/>
 
         <Button
             android:id="@+id/next_button"
