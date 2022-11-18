@@ -37,6 +37,7 @@ public class RegistroActivity extends AppCompatActivity {
 
         listaUsuarios = appDatabase.DAOusuario().obtenerUsuarios();
 
+        //CUANDO SE PULSA EL BOTON PARA CONFIRMAR EL REGISTRO
         boton.setOnClickListener(view -> {
             String usu, pass, nom, apell;
             int comprobacion = 0;
@@ -67,6 +68,7 @@ public class RegistroActivity extends AppCompatActivity {
             }
         });
 
+        //BOTON DE IR PARA ATRÁS
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

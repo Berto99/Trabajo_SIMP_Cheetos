@@ -43,7 +43,6 @@ public class TeacherActivity extends AppCompatActivity {
         ).allowMainThreadQueries().build();
 
         //Recibir dato del nombre y ponerlo en el edit text
-
         Bundle extras =getIntent().getExtras();
         if (extras!=null) {
             nombre = extras.getString("dato_nombre");
@@ -57,7 +56,6 @@ public class TeacherActivity extends AppCompatActivity {
 
 
         //Cogemos el valor de la tabla clases
-
         List <Classroom> clase = appDatabase.DAOClassroom().obtenerClase();
 
         ArrayList<Classroom> classroomList = new ArrayList<>();
@@ -67,7 +65,6 @@ public class TeacherActivity extends AppCompatActivity {
                 classroomList.add(new Classroom(clase.get(i).getGrade(),clase.get(i).getName(), clase.get(i).getFk_usuario()));
             }
         }
-
 
         //pasar al activity de student
         ClassroomAdapter adapter = new ClassroomAdapter();
@@ -107,7 +104,7 @@ public class TeacherActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        //Acción del bortón para atrás
+        //BOTOÓN DEL VOLVER PARA ATRÁS
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

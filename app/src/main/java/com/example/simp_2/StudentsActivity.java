@@ -27,7 +27,6 @@ public class StudentsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //Variables
-
         Button boton =findViewById(R.id.new_student);
         TextView nombre_usuario=findViewById(R.id.username_students_view);
         ImageButton back = findViewById(R.id.backButton_students);
@@ -48,14 +47,15 @@ public class StudentsActivity extends AppCompatActivity {
         ).allowMainThreadQueries().build();
         students=appDatabase.DAOStudent().obtenerStudens();
 
+        //OBTENER EL NOMBRE DEL USUARIO Y PONERLO EN EL TEXT VIEW
         Bundle extras =getIntent().getExtras();
+        nombre = extras.getString("dato_nombre");
+        apellido = extras.getString("dato_apellido");
+        id = extras.getInt("id_clase");
+        usuario=extras.getString("dato_usuario");
+        nombre_usuario.setText(nombre + " " + apellido);
 
-                nombre = extras.getString("dato_nombre");
-                apellido = extras.getString("dato_apellido");
-                id = extras.getInt("id_clase");
-                usuario=extras.getString("dato_usuario");
-                nombre_usuario.setText(nombre + " " + apellido);
-
+        //MOSTRAR EL RECYCLERVIEW
         binding.principalStudentsRecycler.setLayoutManager(new LinearLayoutManager(this));
 
         ArrayList<Student> studentsList = new ArrayList<>();
@@ -88,7 +88,6 @@ public class StudentsActivity extends AppCompatActivity {
             binding.emptyStudentsView.setVisibility(View.GONE);
         }
 
-
         String finalApellido = apellido;
         String finalNombre = nombre;
         int finalId = id;
@@ -98,11 +97,7 @@ public class StudentsActivity extends AppCompatActivity {
 
         });
 
-
-        //Boton para las faltas
-
-
-        //Acción de volver para atrás
+        //BOTÓN DE VOLVER PARA ATRÁS
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, TeacherActivity.class);
             intent.putExtra("dato_nombre", finalNombre);
