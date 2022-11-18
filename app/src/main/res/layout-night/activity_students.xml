@@ -97,7 +97,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageButton
-            android:id="@+id/backButton_singUp"
+            android:id="@+id/backButton_singIn"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@color/orange_pastel"

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SIMP</string>
     <string name="grade_of_new_class">Grade of new class</string>
@@ -17,12 +18,10 @@
     <string name="insert_password_here">Insert your password here</string>
     <string name="are_you_new_sign_in">Are you new? Sign in</string>
     <string name="sign_in">SING IN</string>
-    <string name="sing_up">SING UP</string>
     <string name="name">Name</string>
     <string name="insert_your_name_here">Insert your name here</string>
     <string name="surname">Surname</string>
     <string name="insert_your_surname_here">Insert your surname here</string>
-    <string name="sing_up_button">SING UP</string>
     <string name="save_foults_button">SAVE FOULTS</string>
     <string name="add_new_student_button">Add new Student</string>
     <string name="add_new_class_button">ADD NEW CLASS</string>

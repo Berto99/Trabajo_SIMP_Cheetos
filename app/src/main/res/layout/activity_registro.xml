@@ -21,7 +21,7 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/luckiest_guy"
             android:gravity="center"
-            android:text="@string/sing_up"
+            android:text="@string/sign_in"
             android:textColor="@color/black"
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -144,14 +144,14 @@
             android:id="@+id/singUp_boton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sing_up_button"
+            android:text="@string/sign_in"
             android:fontFamily="@font/luckiest_guy"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageButton
-            android:id="@+id/backButton_singUp"
+            android:id="@+id/backButton_singIn"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@color/orange_pastel"

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIMP</string>
+    <string name="grade_of_new_class">Curso de la nueva clase</string>
+    <string name="add_new_class">AÑADIR NUEVA CLASE</string>
+    <string name="name_of_new_class">Nombre de la nueva clase</string>
+    <string name="put_the_name_here_new_class">Pon el nombre aquí</string>
+    <string name="put_the_grade_here_new_class">Pon el curso aquí</string>
+    <string name="add_new_student">AÑADIR NUEVO ALUMNO</string>
+    <string name="name_of_the_new_student">Nombre del nuevo alumno</string>
+    <string name="put_the_name_here_new_student">Pon el nombre aquí</string>
+    <string name="save_new_class">Guardar</string>
+    <string name="save_new_student">GUARDAR</string>
+    <string name="log_in">Iniciar sesión</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="insert_username_here">Pon el nombre de usuario aquí</string>
+    <string name="password">Contraseña</string>
+    <string name="insert_password_here">Pon el nombre de la contraseña aquí</string>
+    <string name="are_you_new_sign_in">Are you new? Sign in</string>
+    <string name="sign_in">REGISTRARSE</string>
+    <string name="name">Nombre</string>
+    <string name="insert_your_name_here">Pon el nombre aquí</string>
+    <string name="surname">Apellido</string>
+    <string name="insert_your_surname_here">Pon los apellidos aquí</string>
+    <string name="save_foults_button">GUARDAR FALTAS</string>
+    <string name="add_new_student_button">Añadir nuevo alumno</string>
+    <string name="add_new_class_button">Añadir nueva clase</string>
+    <string name="next_button">SIGUIENTE</string>
+    <string name="no_students_right_now">no_hay_alumnos_ahora_mismo</string>
+    <string name="no_class_right_now">no_hay_clases_ahora_mismo</string>
+</resources>

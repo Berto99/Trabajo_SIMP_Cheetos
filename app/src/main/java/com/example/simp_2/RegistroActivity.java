@@ -24,7 +24,7 @@ public class RegistroActivity extends AppCompatActivity {
         EditText nombre = findViewById(R.id.name_edit);
         EditText apellido = findViewById(R.id.surname_edit);
         Button boton = findViewById(R.id.singUp_boton);
-        ImageButton back = findViewById(R.id.backButton_singUp);
+        ImageButton back = findViewById(R.id.backButton_singIn);
         MediaPlayer mp = MediaPlayer.create(this, R.raw.check);
 
         List<Usuario> listaUsuarios;
