@@ -8,10 +8,6 @@
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\drawable\\ic_chevron_black.xml"
     },
     {
-        "merged": "com.example.simp_2.app-merged_res-34:/layout_activity_add_student.xml.flat",
-        "source": "com.example.simp_2.app-main-36:/layout/activity_add_student.xml"
-    },
-    {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-debug-35:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
@@ -56,6 +52,10 @@
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_add_student.xml"
     },
     {
+        "merged": "com.example.simp_2.app-merged_res-34:/layout-land-night_activity_students.xml.flat",
+        "source": "com.example.simp_2.app-main-36:/layout-land-night/activity_students.xml"
+    },
+    {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\layout-land-night_activity_students.xml.flat",
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout-land-night\\activity_students.xml"
     },
@@ -70,10 +70,6 @@
     {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.simp_2.app-merged_res-34:/layout-night_activity_add_student.xml.flat",
-        "source": "com.example.simp_2.app-main-36:/layout-night/activity_add_student.xml"
     },
     {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\layout-night_activity_teacher.xml.flat",
@@ -98,6 +94,10 @@
     {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\layout_activity_total.xml.flat",
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_total.xml"
+    },
+    {
+        "merged": "com.example.simp_2.app-merged_res-34:/layout-night_activity_students.xml.flat",
+        "source": "com.example.simp_2.app-main-36:/layout-night/activity_students.xml"
     },
     {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\layout-land_student_list.xml.flat",
@@ -172,12 +172,12 @@
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout-night\\activity_registro.xml"
     },
     {
-        "merged": "com.example.simp_2.app-merged_res-34:/layout-night_activity_add_class.xml.flat",
-        "source": "com.example.simp_2.app-main-36:/layout-night/activity_add_class.xml"
-    },
-    {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.simp_2.app-merged_res-34:/layout-land_activity_students.xml.flat",
+        "source": "com.example.simp_2.app-main-36:/layout-land/activity_students.xml"
     },
     {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\layout-land_activity_students.xml.flat",
@@ -220,11 +220,11 @@
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-debug-35:\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-debug-35:\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\layout-land_activity_main.xml.flat",
         "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout-land\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\alcor\\.gradle\\daemon\\7.4\\com.example.simp_2.app-debug-35:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     }
 ]

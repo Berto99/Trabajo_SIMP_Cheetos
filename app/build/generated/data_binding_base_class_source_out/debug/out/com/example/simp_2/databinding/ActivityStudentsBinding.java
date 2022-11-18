@@ -17,40 +17,7 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityStudentsBinding extends ViewDataBinding {
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   *   <li>layout-land-night/</li>
-   *   <li>layout-night/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final ImageButton backButtonSingIn;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-land/</li>
-   *   <li>layout-land-night/</li>
-   *   <li>layout-night/</li>
-   * </ul>
-   */
-  @Nullable
+  @NonNull
   public final ImageButton backButtonStudents;
 
   @NonNull
@@ -72,11 +39,10 @@ public abstract class ActivityStudentsBinding extends ViewDataBinding {
   public final TextView usernameStudentsView;
 
   protected ActivityStudentsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton backButtonSingIn, ImageButton backButtonStudents, TextView chosenClass,
-      TextView emptyStudentsView, Button newStudent, RecyclerView principalStudentsRecycler,
-      Button saveFaults, TextView usernameStudentsView) {
+      ImageButton backButtonStudents, TextView chosenClass, TextView emptyStudentsView,
+      Button newStudent, RecyclerView principalStudentsRecycler, Button saveFaults,
+      TextView usernameStudentsView) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.backButtonSingIn = backButtonSingIn;
     this.backButtonStudents = backButtonStudents;
     this.chosenClass = chosenClass;
     this.emptyStudentsView = emptyStudentsView;
