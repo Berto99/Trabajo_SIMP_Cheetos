@@ -76,7 +76,7 @@ public class StudentsActivity extends AppCompatActivity {
             intent.putExtra("dato_alumno", student.getName());
             boton_faltas.setOnClickListener(view -> {
                 if(injus.isChecked()){
-                    appDatabase.DAOFaltas().insertarFalta(new Faltas(student.getId(),usuario,));
+                    appDatabase.DAOFaltas().insertarFalta(new Faltas(student.getId()));
                 }
             });
             startActivity(intent);

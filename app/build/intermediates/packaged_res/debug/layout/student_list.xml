@@ -97,5 +97,6 @@
             android:text="R"
             app:layout_constraintStart_toEndOf="@+id/jus_checkBox"
             app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
          
