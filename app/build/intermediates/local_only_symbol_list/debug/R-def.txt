@@ -39,11 +39,15 @@ id empty_view
 id grade_class_input
 id grade_class_text
 id grade_text
+id grupo
 id id_student_text
 id imagenCheetos
 id injus_checkBox
+id injustificada
 id jus_checkBox
+id justificar
 id log_in
+id mostrar
 id name_class_input
 id name_class_text
 id name_edit
@@ -60,6 +64,7 @@ id principal_recycler
 id principal_students_recycler
 id register_student
 id retra_checkBox
+id retraso
 id save_button
 id save_faults
 id simp_image

@@ -25,12 +25,22 @@ public class Faltas {
     private int fk_id_alumno;
     private String fk_usuario;
     private Date fecha;
+    private String tipo;
 
 
-    public Faltas(int fk_id_alumno, String fk_usuario, Date fecha) {
+    public Faltas(int fk_id_alumno, String fk_usuario, Date fecha,String tipo) {
         this.fk_id_alumno = fk_id_alumno;
         this.fk_usuario = fk_usuario;
         this.fecha = fecha;
+        this.tipo=tipo;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public int getId() {

@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -71,6 +72,9 @@ public class StudentsActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(student -> {
             Intent intent = new Intent(this, TotalActivity.class);
             intent.putExtra("dato_alumno", student.getName());
+            int id_alumno =appDatabase.DAOStudent().obtenernumLista(student.getName());
+            intent.putExtra("id_alumno",id_alumno);
+            intent.putExtra("usuario",usuario);
             startActivity(intent);
         });
 

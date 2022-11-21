@@ -2756,6 +2756,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id grupo
 id guideline
 id header_title
 id hideable
@@ -2775,6 +2776,7 @@ id immediateStop
 id included
 id info
 id injus_checkBox
+id injustificada
 id invisible
 id inward
 id italic
@@ -2782,6 +2784,7 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id jus_checkBox
+id justificar
 id labeled
 id layout
 id left
@@ -2825,6 +2828,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id mostrar
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -2911,6 +2915,7 @@ id ratio
 id rectangles
 id register_student
 id retra_checkBox
+id retraso
 id reverseSawtooth
 id right
 id rightToLeft

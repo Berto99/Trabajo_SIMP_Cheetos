@@ -50,6 +50,45 @@
             app:layout_constraintTop_toBottomOf="@+id/name_total" />
 
 
+        <RadioGroup
+            android:id="@+id/grupo"
+            android:layout_width="356dp"
+            android:layout_height="197dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.963"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.591">
 
+            <RadioButton
+                android:id="@+id/injustificada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Injustificada" />
+
+            <RadioButton
+                android:id="@+id/justificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Justificar" />
+
+            <RadioButton
+                android:id="@+id/retraso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retraso" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.809" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

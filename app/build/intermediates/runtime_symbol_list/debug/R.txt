@@ -2755,6 +2755,7 @@ int id graph_wrap 0x7f0a00e1
 int id group_divider 0x7f0a00e2
 int id grouping 0x7f0a00e3
 int id groups 0x7f0a00e4
+int id grupo 0x7f0a0224
 int id guideline 0x7f0a00e5
 int id header_title 0x7f0a00e6
 int id hideable 0x7f0a00e7
@@ -2774,6 +2775,7 @@ int id immediateStop 0x7f0a00f4
 int id included 0x7f0a00f5
 int id info 0x7f0a00f6
 int id injus_checkBox 0x7f0a00f7
+int id injustificada 0x7f0a0220
 int id invisible 0x7f0a00f8
 int id inward 0x7f0a00f9
 int id italic 0x7f0a00fa
@@ -2781,6 +2783,7 @@ int id item_touch_helper_previous_elevation 0x7f0a00fb
 int id jumpToEnd 0x7f0a00fc
 int id jumpToStart 0x7f0a00fd
 int id jus_checkBox 0x7f0a00fe
+int id justificar 0x7f0a0221
 int id labeled 0x7f0a00ff
 int id layout 0x7f0a0100
 int id left 0x7f0a0101
@@ -2824,6 +2827,7 @@ int id month_navigation_fragment_toggle 0x7f0a0126
 int id month_navigation_next 0x7f0a0127
 int id month_navigation_previous 0x7f0a0128
 int id month_title 0x7f0a0129
+int id mostrar 0x7f0a0222
 int id motion_base 0x7f0a012a
 int id mtrl_anchor_parent 0x7f0a012b
 int id mtrl_calendar_day_selector_frame 0x7f0a012c
@@ -2910,6 +2914,7 @@ int id ratio 0x7f0a017c
 int id rectangles 0x7f0a017d
 int id register_student 0x7f0a017e
 int id retra_checkBox 0x7f0a017f
+int id retraso 0x7f0a0223
 int id reverseSawtooth 0x7f0a0180
 int id right 0x7f0a0181
 int id rightToLeft 0x7f0a0182
