@@ -17,11 +17,11 @@ public interface daoStudent {
     @Query("SELECT MAX(number_list) from Student where fk_clase =:fk_clase")
     int obtenernumLista(int fk_clase);
 
-    @Query("SELECT id from Student where name =:name")
-    int obtenernumLista(String name);
+    @Query("SELECT * from Student where id =:id")
+    Student obteneridStudent(int id );
 
-
-
+    @Query("SELECT * from Student where name =:name")
+    int obteneridStudentporNombre(String name);
 
 
 }

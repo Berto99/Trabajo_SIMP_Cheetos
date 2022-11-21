@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class TotalActivity extends AppCompatActivity {
 
@@ -23,7 +24,7 @@ public class TotalActivity extends AppCompatActivity {
         TextView texto_alumno = findViewById(R.id.name_total);
         String alumno;
         int id;
-        String usuario;
+        String usuario,nombre,apellido;
         RadioButton injustficada = findViewById(R.id.injustificada);
         RadioButton justficada = findViewById(R.id.justificar);
         RadioButton retraso = findViewById(R.id.retraso);
@@ -40,13 +41,15 @@ public class TotalActivity extends AppCompatActivity {
         alumno = extras.getString("dato_alumno");
         id = extras.getInt("id_alumno");
         usuario = extras.getString("usuario");
+        nombre = extras.getString("dato_nombre");
+        apellido = extras.getString("dato_apellido");
         texto_alumno.setText(alumno);
 
-        faltas(appDatabase, injustficada, justficada, retraso, boton, id, usuario);
+        faltas(appDatabase, injustficada, justficada, retraso, boton, id, usuario,nombre,apellido);
+        comprobarFaltas(appDatabase,id);}
 
-    }
-
-    private void faltas(AppData appDatabase, RadioButton injustficada, RadioButton justficada, RadioButton retraso, Button boton, int id, String usuario) {
+    private void faltas(AppData appDatabase, RadioButton injustficada, RadioButton justficada,
+                        RadioButton retraso, Button boton, int id, String usuario,String nombre,String apellido) {
         boton.setOnClickListener(view -> {
             Date date;
             Calendar calendar = Calendar.getInstance();
@@ -54,6 +57,13 @@ public class TotalActivity extends AppCompatActivity {
             if (injustficada.isChecked()) {
                 Toast.makeText(this, "Falta injustificada introducida", Toast.LENGTH_SHORT).show();
                 appDatabase.DAOFaltas().insertarFalta(new Faltas(id, usuario, date, "I"));
+                Intent intent = new Intent(this, StudentsActivity.class);
+                intent.putExtra("id_alumno",id);
+                intent.putExtra("usuario",usuario);
+                intent.putExtra("dato_nombre", nombre);
+                intent.putExtra("dato_apellido", apellido);
+                startActivity(intent);
+
 
             }
 
@@ -69,6 +79,20 @@ public class TotalActivity extends AppCompatActivity {
             }
 
         });
+
+    }
+
+    private void comprobarFaltas(AppData appDatabase,int id){
+        int num_faltas= appDatabase.DAOFaltas().numFaltas(id);
+        Student student= appDatabase.DAOStudent().obteneridStudent(id);
+        if(num_faltas>=3){
+            List<Faltas> faltas = appDatabase.DAOFaltas().faltasAlumno(id);
+            for(int i = 0 ; i<faltas.size();i++){
+                appDatabase.DAOFaltas().borrarFaltas(faltas.get(i));
+            }
+            appDatabase.DAOFaltas().borrarStudent(student);
+            Toast.makeText(this, "Has llegado a 3 faltas, quedas Eliminado", Toast.LENGTH_SHORT).show();
+        }
 
     }
 

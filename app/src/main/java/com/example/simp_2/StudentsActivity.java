@@ -69,12 +69,16 @@ public class StudentsActivity extends AppCompatActivity {
         binding.principalStudentsRecycler.setAdapter(adapter);
         adapter.submitList(studentsList);
 
+        String finalNombre1 = nombre;
+        String finalApellido1 = apellido;
         adapter.setOnItemClickListener(student -> {
             Intent intent = new Intent(this, TotalActivity.class);
             intent.putExtra("dato_alumno", student.getName());
-            int id_alumno =appDatabase.DAOStudent().obtenernumLista(student.getName());
+            int id_alumno =appDatabase.DAOStudent().obteneridStudentporNombre(student.getName());
             intent.putExtra("id_alumno",id_alumno);
             intent.putExtra("usuario",usuario);
+            intent.putExtra("dato_nombre", finalNombre1);
+            intent.putExtra("dato_apellido", finalApellido1);
             startActivity(intent);
         });
 
