@@ -64,7 +64,7 @@ id register_student
 id retraso
 id save_button
 id save_faults
-id save_faults_button
+id save_foults_button
 id show_button
 id simp_image
 id singUp_boton

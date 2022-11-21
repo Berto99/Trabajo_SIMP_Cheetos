@@ -47,7 +47,7 @@
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/save_faults_button"
+            app:layout_constraintTop_toBottomOf="@+id/save_foults_button"
             tools:text="Tiene un total de X faltas" />
 
         <RadioGroup
@@ -97,12 +97,13 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/save_faults_button"
+            android:id="@+id/save_foults_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/luckiest_guy"
             android:text="@string/save_foults_button"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/grupo"
             app:layout_constraintTop_toBottomOf="@+id/grupo" />
     </androidx.constraintlayout.widget.ConstraintLayout>

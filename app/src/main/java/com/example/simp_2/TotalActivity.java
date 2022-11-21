@@ -29,7 +29,7 @@ public class TotalActivity extends AppCompatActivity {
         RadioButton injustficada = findViewById(R.id.injustificada);
         RadioButton justficada = findViewById(R.id.justificar);
         RadioButton retraso = findViewById(R.id.retraso);
-        Button boton = findViewById(R.id.show_button);
+        Button boton = findViewById(R.id.save_foults_button);
 
 
         AppData appDatabase = Room.databaseBuilder(
