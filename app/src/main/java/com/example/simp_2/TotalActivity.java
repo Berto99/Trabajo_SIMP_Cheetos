@@ -186,10 +186,9 @@ public class TotalActivity extends AppCompatActivity {
             Toast.makeText(this, "No tiene faltas", Toast.LENGTH_SHORT).show();
         }
         else {
-            for (int i = 0; i < faltas.size(); i++) {
-                appDatabase.DAOFaltas().borrarFaltas(faltas.get(i));
-                Toast.makeText(this, "Falta Justificada", Toast.LENGTH_SHORT).show();
-            }
+            appDatabase.DAOFaltas().borrarFaltas(faltas.get(0));
+            Toast.makeText(this, "Falta Justificada", Toast.LENGTH_SHORT).show();
+
         }
     }
 
