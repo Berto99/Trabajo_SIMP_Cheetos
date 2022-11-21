@@ -1,42 +1,38 @@
 [
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_main.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/student_list.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/student_list.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\activity_add_class.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_add_class.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_teacher.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_teacher.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\student_list.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\student_list.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_students.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_students.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\principal_list.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\principal_list.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_main.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\activity_total.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_total.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_add_student.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_add_student.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\activity_teacher.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_teacher.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_registro.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_registro.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\activity_registro.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_registro.xml"
-    },
-    {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\activity_students.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_students.xml"
-    },
-    {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-33:\\layout\\activity_add_student.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-36:\\layout\\activity_add_student.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_add_class.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/activity_add_class.xml"
     },
     {
         "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/activity_total.xml",
         "source": "com.example.simp_2.app-main-36:/layout/activity_total.xml"
+    },
+    {
+        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout/principal_list.xml",
+        "source": "com.example.simp_2.app-main-36:/layout/principal_list.xml"
     }
 ]

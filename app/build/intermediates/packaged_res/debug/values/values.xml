@@ -32,11 +32,13 @@
     <string name="add_new_student_button">Add new Student</string>
     <string name="app_name">SIMP</string>
     <string name="are_you_new_sign_in">Are you new? Sign in</string>
+    <string name="delay">Delay</string>
     <string name="grade_of_new_class">Grade of new class</string>
     <string name="insert_password_here">Insert your password here</string>
     <string name="insert_username_here">Insert your username here</string>
     <string name="insert_your_name_here">Insert your name here</string>
     <string name="insert_your_surname_here">Insert your surname here</string>
+    <string name="justified">Justified</string>
     <string name="log_in">LOG IN</string>
     <string name="name">Name</string>
     <string name="name_of_new_class">Name of new class</string>
@@ -51,8 +53,10 @@
     <string name="save_foults_button">SAVE FOULTS</string>
     <string name="save_new_class">Save</string>
     <string name="save_new_student">SAVE</string>
+    <string name="show_totals_button">Show total</string>
     <string name="sign_in">SING IN</string>
     <string name="surname">Surname</string>
+    <string name="unjustified">Unjustified</string>
     <string name="username">Username</string>
     <style name="Theme.SIMP_2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

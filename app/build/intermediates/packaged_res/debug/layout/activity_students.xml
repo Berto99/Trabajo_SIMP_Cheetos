@@ -54,8 +54,6 @@
             tools:itemCount="7"
             tools:listitem="@layout/student_list" />
 
-        <!--El mensaje cuando no hay lista-->
-
         <Button
             android:id="@+id/save_faults"
             android:layout_width="0dp"
@@ -67,6 +65,8 @@
             app:layout_constraintEnd_toEndOf="@+id/principal_students_recycler"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/principal_students_recycler" />
+
+        <!--El mensaje cuando no hay lista-->
 
         <TextView
             android:id="@+id/empty_students_view"

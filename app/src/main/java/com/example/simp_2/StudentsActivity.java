@@ -36,7 +36,6 @@ public class StudentsActivity extends AppCompatActivity {
         int id = 0;
         List<Student> students;
         String usuario;
-        CheckBox injus = findViewById(R.id.injus_checkBox);
 
         //Acceder BBDD
         AppData appDatabase = Room.databaseBuilder(

@@ -4,7 +4,7 @@ package com.example.simp_2.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,30 +22,22 @@ public abstract class StudentListBinding extends ViewDataBinding {
   public final TextView idStudentText;
 
   @NonNull
-  public final CheckBox injusCheckBox;
-
-  @NonNull
-  public final CheckBox jusCheckBox;
+  public final ImageView imageView;
 
   @NonNull
   public final TextView nameStudentText;
 
   @NonNull
-  public final CheckBox retraCheckBox;
-
-  @NonNull
   public final TextView surnameStudentText;
 
   protected StudentListBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      View divider, TextView idStudentText, CheckBox injusCheckBox, CheckBox jusCheckBox,
-      TextView nameStudentText, CheckBox retraCheckBox, TextView surnameStudentText) {
+      View divider, TextView idStudentText, ImageView imageView, TextView nameStudentText,
+      TextView surnameStudentText) {
     super(_bindingComponent, _root, _localFieldCount);
     this.divider = divider;
     this.idStudentText = idStudentText;
-    this.injusCheckBox = injusCheckBox;
-    this.jusCheckBox = jusCheckBox;
+    this.imageView = imageView;
     this.nameStudentText = nameStudentText;
-    this.retraCheckBox = retraCheckBox;
     this.surnameStudentText = surnameStudentText;
   }
 
