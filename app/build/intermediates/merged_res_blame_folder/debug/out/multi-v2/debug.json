@@ -1577,25 +1577,6 @@
                     }
                 },
                 {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values/preloaded_fonts.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "159"
-                    },
-                    "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "3667",
-                        "endLines": "18",
-                        "endColumns": "12",
-                        "endOffsets": "3771"
-                    }
-                },
-                {
                     "source": "/home/alumnotd/.gradle/caches/transforms-3/890fbcef9c869e9a85209cc5c9a96739/transformed/lifecycle-runtime-2.5.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -1610,6 +1591,25 @@
                         "startOffsets": "95789",
                         "endColumns": "42",
                         "endOffsets": "95827"
+                    }
+                },
+                {
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values/font_certs.xml",
+                    "from": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,257,1982",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "252,1977,3567"
+                    },
+                    "to": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "150,352,2077",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "347,2072,3662"
                     }
                 },
                 {
@@ -1629,6 +1629,23 @@
                         "endLines": "50,598,599,600,601,917,918,919,1790,4784,4787,4790,8986",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "5193,32983,33045,33107,33171,55139,55196,55250,120418,322239,322365,322493,568215"
+                    }
+                },
+                {
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "7,9,10,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "286,370,411,55,102,149,196,241,328",
+                        "endColumns": "41,40,47,46,46,46,44,44,41",
+                        "endOffsets": "323,406,454,97,144,191,236,281,365"
+                    },
+                    "to": {
+                        "startLines": "589,805,806,815,816,817,828,829,833",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "32244,47714,47755,48391,48438,48485,49229,49274,49482",
+                        "endColumns": "41,40,47,46,46,46,44,44,41",
+                        "endOffsets": "32281,47750,47798,48433,48480,48527,49269,49314,49519"
                     }
                 },
                 {
@@ -1687,6 +1704,44 @@
                     }
                 },
                 {
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "793"
+                    },
+                    "to": {
+                        "startLines": "5851",
+                        "startColumns": "4",
+                        "startOffsets": "393536",
+                        "endLines": "5863",
+                        "endColumns": "12",
+                        "endOffsets": "394108"
+                    }
+                },
+                {
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values/preloaded_fonts.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "159"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "3667",
+                        "endLines": "18",
+                        "endColumns": "12",
+                        "endOffsets": "3771"
+                    }
+                },
+                {
                     "source": "/home/alumnotd/.gradle/caches/transforms-3/41e2233caf88039e2a8ccc2fe035db46/transformed/databinding-adapters-7.3.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4",
@@ -1704,6 +1759,23 @@
                     }
                 },
                 {
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,26,8,25,2,18,32,3,17,15,21,23,31,13,20,5,9,27,29,28,16,7,6,10,24,11,12,33,19,22,30,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "163,1498,433,1431,55,1027,1844,97,952,831,1178,1294,1796,743,1140,219,493,1561,1678,1606,906,357,283,569,1372,645,693,1884,1096,1250,1744,785",
+                        "endColumns": "55,62,59,66,41,68,39,65,74,74,71,77,47,41,37,63,75,44,65,71,45,75,73,75,58,47,49,57,43,43,51,45",
+                        "endOffsets": "214,1556,488,1493,92,1091,1879,158,1022,901,1245,1367,1839,780,1173,278,564,1601,1739,1673,947,428,352,640,1426,688,738,1937,1135,1289,1791,826"
+                    },
+                    "to": {
+                        "startLines": "1620,1621,1622,1623,1625,1627,1635,1640,1643,1644,1645,1646,1648,1650,1722,1723,1724,1725,1726,1727,1728,1734,1735,1736,1737,1738,1739,1741,1742,1744,1745,1746",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "101493,101549,101612,101672,101822,102014,102877,103385,103758,103833,103908,103980,104117,104205,115460,115498,115562,115638,115683,115749,115821,116669,116745,116819,116895,116954,117002,117105,117163,117278,117322,117374",
+                        "endColumns": "55,62,59,66,41,68,39,65,74,74,71,77,47,41,37,63,75,44,65,71,45,75,73,75,58,47,49,57,43,43,51,45",
+                        "endOffsets": "101544,101607,101667,101734,101859,102078,102912,103446,103828,103903,103975,104053,104160,104242,115493,115557,115633,115678,115744,115816,115862,116740,116814,116890,116949,116997,117047,117158,117202,117317,117369,117415"
+                    }
+                },
+                {
                     "source": "/home/alumnotd/.gradle/caches/transforms-3/b96256539dbd15fe05ef3f774d34b33b/transformed/transition-1.2.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -1718,25 +1790,6 @@
                         "startOffsets": "92402,92442,93624,93806,93861,95398,95452,95504,95553,95614",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "92437,92484,93662,93856,93903,95447,95499,95548,95609,95659"
-                    }
-                },
-                {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "793"
-                    },
-                    "to": {
-                        "startLines": "5851",
-                        "startColumns": "4",
-                        "startOffsets": "393536",
-                        "endLines": "5863",
-                        "endColumns": "12",
-                        "endOffsets": "394108"
                     }
                 },
                 {
@@ -1759,23 +1812,6 @@
                     }
                 },
                 {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "4,26,8,25,2,18,32,3,17,15,21,23,31,13,20,5,9,27,29,28,16,7,6,10,24,11,12,33,19,22,30,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "163,1498,433,1431,55,1027,1844,97,952,831,1178,1294,1796,743,1140,219,493,1561,1678,1606,906,357,283,569,1372,645,693,1884,1096,1250,1744,785",
-                        "endColumns": "55,62,59,66,41,68,39,65,74,74,71,77,47,41,37,63,75,44,65,71,45,75,73,75,58,47,49,57,43,43,51,45",
-                        "endOffsets": "214,1556,488,1493,92,1091,1879,158,1022,901,1245,1367,1839,780,1173,278,564,1601,1739,1673,947,428,352,640,1426,688,738,1937,1135,1289,1791,826"
-                    },
-                    "to": {
-                        "startLines": "1620,1621,1622,1623,1625,1627,1635,1640,1643,1644,1645,1646,1648,1650,1722,1723,1724,1725,1726,1727,1728,1734,1735,1736,1737,1738,1739,1741,1742,1744,1745,1746",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "101493,101549,101612,101672,101822,102014,102877,103385,103758,103833,103908,103980,104117,104205,115460,115498,115562,115638,115683,115749,115821,116669,116745,116819,116895,116954,117002,117105,117163,117278,117322,117374",
-                        "endColumns": "55,62,59,66,41,68,39,65,74,74,71,77,47,41,37,63,75,44,65,71,45,75,73,75,58,47,49,57,43,43,51,45",
-                        "endOffsets": "101544,101607,101667,101734,101859,102078,102912,103446,103828,103903,103975,104053,104160,104242,115493,115557,115633,115678,115744,115816,115862,116740,116814,116890,116949,116997,117047,117158,117202,117317,117369,117415"
-                    }
-                },
-                {
                     "source": "/home/alumnotd/.gradle/caches/transforms-3/0669cfa2680cb1a246f3cde1cbb2ad91/transformed/recyclerview-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
@@ -1795,23 +1831,6 @@
                     }
                 },
                 {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "7,9,10,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "286,370,411,55,102,149,196,241,328",
-                        "endColumns": "41,40,47,46,46,46,44,44,41",
-                        "endOffsets": "323,406,454,97,144,191,236,281,365"
-                    },
-                    "to": {
-                        "startLines": "589,805,806,815,816,817,828,829,833",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "32244,47714,47755,48391,48438,48485,49229,49274,49482",
-                        "endColumns": "41,40,47,46,46,46,44,44,41",
-                        "endOffsets": "32281,47750,47798,48433,48480,48527,49269,49314,49519"
-                    }
-                },
-                {
                     "source": "/home/alumnotd/.gradle/caches/transforms-3/ce2ffdaf6b82693a50f2f836056ec56a/transformed/startup-runtime-1.1.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -1826,25 +1845,6 @@
                         "startOffsets": "101739",
                         "endColumns": "82",
                         "endOffsets": "101817"
-                    }
-                },
-                {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values/font_certs.xml",
-                    "from": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,257,1982",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "252,1977,3567"
-                    },
-                    "to": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "150,352,2077",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "347,2072,3662"
                     }
                 }
             ]
@@ -3174,23 +3174,6 @@
             "outputFile": "com.example.simp_2.app-merged_res-34:/values-es_values-es.arsc.flat",
             "map": [
                 {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values-es/strings.xml",
-                    "from": {
-                        "startLines": "4,26,8,25,2,18,32,3,17,15,21,23,31,13,20,5,9,27,29,28,16,7,6,10,24,11,12,33,19,22,30,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "168,1573,450,1502,55,1088,1945,97,1003,876,1250,1364,1895,771,1210,229,514,1641,1768,1691,955,375,300,590,1440,667,718,1987,1162,1319,1841,821",
-                        "endColumns": "60,67,63,70,41,73,41,70,84,78,68,75,49,49,39,70,75,49,72,76,47,74,74,76,61,50,52,56,47,44,53,54",
-                        "endOffsets": "224,1636,509,1568,92,1157,1982,163,1083,950,1314,1435,1940,816,1245,295,585,1686,1836,1763,998,445,370,662,1497,713,766,2039,1205,1359,1890,871"
-                    },
-                    "to": {
-                        "startLines": "33,34,35,36,37,38,43,46,48,49,50,51,53,54,100,101,102,103,104,105,106,108,109,110,111,112,113,115,116,118,119,120",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3014,3075,3143,3207,3278,3320,3788,3990,4142,4227,4306,4375,4514,4564,8269,8309,8380,8456,8506,8579,8656,8787,8862,8937,9014,9076,9127,9263,9320,9469,9514,9568",
-                        "endColumns": "60,67,63,70,41,73,41,70,84,78,68,75,49,49,39,70,75,49,72,76,47,74,74,76,61,50,52,56,47,44,53,54",
-                        "endOffsets": "3070,3138,3202,3273,3315,3389,3825,4056,4222,4301,4370,4446,4559,4609,8304,8375,8451,8501,8574,8651,8699,8857,8932,9009,9071,9122,9175,9315,9363,9509,9563,9618"
-                    }
-                },
-                {
                     "source": "/home/alumnotd/.gradle/caches/transforms-3/bd4a99450df9efa1e9019504ea56c77f/transformed/material-1.6.1/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
@@ -3207,6 +3190,23 @@
                         "endLines": "5,39,40,41,42,44,45,47,52,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,107",
                         "endColumns": "12,86,103,121,80,64,94,80,62,88,68,62,73,63,55,117,57,61,55,79,138,88,81,110,80,79,89,66,65,78,81,87,73,76,69,78,83,83,91,99,73,80,101,52,66,92,88,61,63,62,112,92,103,93,82",
                         "endOffsets": "278,3476,3580,3702,3783,3890,3985,4137,4509,4698,4767,4830,4904,4968,5024,5142,5200,5262,5318,5398,5537,5626,5708,5819,5900,5980,6070,6137,6203,6282,6364,6452,6526,6603,6673,6752,6836,6920,7012,7112,7186,7267,7369,7422,7489,7582,7671,7733,7797,7860,7973,8066,8170,8264,8782"
+                    }
+                },
+                {
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values-es/strings.xml",
+                    "from": {
+                        "startLines": "4,26,8,25,2,18,32,3,17,15,21,23,31,13,20,5,9,27,29,28,16,7,6,10,24,11,12,33,19,22,30,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "168,1573,450,1502,55,1088,1945,97,1003,876,1250,1364,1895,771,1210,229,514,1641,1768,1691,955,375,300,590,1440,667,718,1987,1162,1319,1841,821",
+                        "endColumns": "60,67,63,70,41,73,41,70,84,78,68,75,49,49,39,70,75,49,72,76,47,74,74,76,61,50,52,56,47,44,53,54",
+                        "endOffsets": "224,1636,509,1568,92,1157,1982,163,1083,950,1314,1435,1940,816,1245,295,585,1686,1836,1763,998,445,370,662,1497,713,766,2039,1205,1359,1890,871"
+                    },
+                    "to": {
+                        "startLines": "33,34,35,36,37,38,43,46,48,49,50,51,53,54,100,101,102,103,104,105,106,108,109,110,111,112,113,115,116,118,119,120",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3014,3075,3143,3207,3278,3320,3788,3990,4142,4227,4306,4375,4514,4564,8269,8309,8380,8456,8506,8579,8656,8787,8862,8937,9014,9076,9127,9263,9320,9469,9514,9568",
+                        "endColumns": "60,67,63,70,41,73,41,70,84,78,68,75,49,49,39,70,75,49,72,76,47,74,74,76,61,50,52,56,47,44,53,54",
+                        "endOffsets": "3070,3138,3202,3273,3315,3389,3825,4056,4222,4301,4370,4446,4559,4609,8304,8375,8451,8501,8574,8651,8699,8857,8932,9009,9071,9122,9175,9315,9363,9509,9563,9618"
                     }
                 },
                 {
@@ -3864,7 +3864,7 @@
             "outputFile": "com.example.simp_2.app-merged_res-34:/values-night-v29_values-night-v29.arsc.flat",
             "map": [
                 {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values-night-v29/themes.xml",
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values-night-v29/themes.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -5833,7 +5833,24 @@
             "outputFile": "com.example.simp_2.app-merged_res-34:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values-night/themes.xml",
+                    "source": "/home/alumnotd/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,47",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,3959",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,4043"
+                    }
+                },
+                {
+                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -5849,23 +5866,6 @@
                         "endLines": "46",
                         "endColumns": "12",
                         "endOffsets": "3954"
-                    }
-                },
-                {
-                    "source": "/home/alumnotd/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,47",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,3959",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,4043"
                     }
                 },
                 {
