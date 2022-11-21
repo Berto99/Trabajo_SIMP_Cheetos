@@ -28,4 +28,8 @@
     <string name="next_button">NEXT</string>
     <string name="no_students_right_now">no_students_right_now</string>
     <string name="no_class_right_now">no_class_right_now</string>
+    <string name="unjustified">Unjustified</string>
+    <string name="justified">Justified</string>
+    <string name="delay">Delay</string>
+    <string name="show_totals_button">Show total</string>
 </resources>

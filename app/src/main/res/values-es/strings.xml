@@ -28,4 +28,8 @@
     <string name="next_button">SIGUIENTE</string>
     <string name="no_students_right_now">no_hay_alumnos_ahora_mismo</string>
     <string name="no_class_right_now">no_hay_clases_ahora_mismo</string>
+    <string name="unjustified">Injustificada</string>
+    <string name="justified">Justificada</string>
+    <string name="delay">Retraso</string>
+    <string name="show_totals_button">Ver total</string>
 </resources>

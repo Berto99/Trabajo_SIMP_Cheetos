@@ -41,8 +41,6 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Pepe Martínez" />
 
-        <!--El mensaje cuando no hay lista-->
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/principal_students_recycler"
             android:layout_width="0dp"
@@ -67,6 +65,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+
+        <!--El mensaje cuando no hay lista-->
         <TextView
             android:id="@+id/empty_students_view"
             android:layout_width="match_parent"

@@ -20,6 +20,7 @@
             android:fontFamily="@font/luckiest_guy"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:paddingTop="15dp"
             app:layout_constraintBottom_toBottomOf="@+id/surname_student_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/surname_student_text"
@@ -35,6 +36,7 @@
             android:paddingEnd="16dp"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:paddingTop="15dp"
             app:layout_constraintStart_toEndOf="@+id/surname_student_text"
             tools:layout_editor_absoluteY="10dp"
             tools:text="Adrián"
@@ -50,10 +52,13 @@
             android:paddingEnd="5dp"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:paddingTop="15dp"
             app:layout_constraintBottom_toBottomOf="@+id/name_student_text"
             app:layout_constraintStart_toEndOf="@+id/id_student_text"
             app:layout_constraintTop_toTopOf="@+id/name_student_text"
             tools:text="Cortés de Dios," />
+
+
 
         <View
             android:id="@+id/divider"
@@ -66,37 +71,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <CheckBox
-            android:id="@+id/injus_checkBox"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/luckiest_guy"
-            android:text="I"
-            app:layout_constraintStart_toStartOf="@+id/id_student_text"
-            app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
-
-        <CheckBox
-            android:id="@+id/jus_checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/luckiest_guy"
-            android:text="J"
-            app:layout_constraintStart_toEndOf="@+id/injus_checkBox"
-            app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
-
-        <CheckBox
-            android:id="@+id/retra_checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/luckiest_guy"
-            android:text="R"
-            app:layout_constraintStart_toEndOf="@+id/jus_checkBox"
-            app:layout_constraintTop_toBottomOf="@+id/name_student_text" />
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/name_student_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/name_student_text"
+            app:srcCompat="@drawable/ic_chevron_black" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

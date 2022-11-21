@@ -3,16 +3,12 @@ package com.example.simp_2;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -31,7 +27,7 @@ public class TotalActivity extends AppCompatActivity {
         RadioButton injustficada = findViewById(R.id.injustificada);
         RadioButton justficada = findViewById(R.id.justificar);
         RadioButton retraso = findViewById(R.id.retraso);
-        Button boton = findViewById(R.id.mostrar);
+        Button boton = findViewById(R.id.show_button);
 
 
         AppData appDatabase = Room.databaseBuilder(
