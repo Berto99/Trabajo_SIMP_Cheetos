@@ -20,12 +20,17 @@ public interface daoFaltas {
     @Delete
     void borrarStudent(Student...students);
 
-    @Query("SELECT COUNT(id) from Faltas where fk_id_alumno=:fk_id_alumno")
+    @Query("SELECT COUNT(id) from Faltas where fk_id_alumno=:fk_id_alumno and tipo='I'")
     int numFaltas(int fk_id_alumno);
+
+    @Query("SELECT COUNT(id) from Faltas where fk_id_alumno=:fk_id_alumno and tipo='R'")
+    int numRetrasos(int fk_id_alumno);
 
     @Delete
     void  borrarFaltas(Faltas...faltas);
 
     @Query("SELECT * from Faltas where fk_id_alumno=:fk_id_alumno")
     List<Faltas> faltasAlumno(int fk_id_alumno);
+
+
 }

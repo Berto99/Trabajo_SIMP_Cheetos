@@ -58,6 +58,11 @@
     <string name="surname">Surname</string>
     <string name="unjustified">Unjustified</string>
     <string name="username">Username</string>
+    <style name="DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/scale_up</item>
+        <item name="android:windowExitAnimation">@anim/scale_down</item>
+
+    </style>
     <style name="Theme.SIMP_2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

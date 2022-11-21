@@ -1,22 +1,22 @@
 [
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout-land/activity_teacher.xml",
-        "source": "com.example.simp_2.app-main-36:/layout-land/activity_teacher.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-34:/layout-land/student_list.xml",
+        "source": "com.example.simp_2.app-main-37:/layout-land/student_list.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout-land/activity_students.xml",
-        "source": "com.example.simp_2.app-main-36:/layout-land/activity_students.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_students.xml",
+        "source": "com.example.simp_2.app-main-37:/layout-land/activity_students.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout-land/student_list.xml",
-        "source": "com.example.simp_2.app-main-36:/layout-land/student_list.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_total.xml",
+        "source": "com.example.simp_2.app-main-37:/layout-land/activity_total.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout-land/activity_main.xml",
-        "source": "com.example.simp_2.app-main-36:/layout-land/activity_main.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_main.xml",
+        "source": "com.example.simp_2.app-main-37:/layout-land/activity_main.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-33:/layout-land/activity_total.xml",
-        "source": "com.example.simp_2.app-main-36:/layout-land/activity_total.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_teacher.xml",
+        "source": "com.example.simp_2.app-main-37:/layout-land/activity_teacher.xml"
     }
 ]

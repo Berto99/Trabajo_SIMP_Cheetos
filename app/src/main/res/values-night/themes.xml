@@ -14,4 +14,9 @@
         <item name="android:statusBarColor">#333333</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/scale_up</item>
+        <item name="android:windowExitAnimation">@anim/scale_down</item>
+
+    </style>
 </resources>

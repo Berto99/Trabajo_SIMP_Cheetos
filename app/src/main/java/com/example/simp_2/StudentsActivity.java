@@ -63,14 +63,14 @@ public class StudentsActivity extends AppCompatActivity {
                 studentsList.add(new Student(students.get(i).getNumber_list() ,students.get(i).getName(),students.get(i).getFk_clase()));
             }
         }
-
+        //Adaptador del recyclerview
         StudentAdapter adapter = new StudentAdapter();
         binding.principalStudentsRecycler.setAdapter(adapter);
         adapter.submitList(studentsList);
-
         String finalNombre1 = nombre;
         String finalApellido1 = apellido;
         int finalId1 = id;
+        //Cuando pulses en alguno de los elementos del recyclerView
         adapter.setOnItemClickListener(student -> {
             Intent intent = new Intent(this, TotalActivity.class);
             intent.putExtra("dato_alumno", student.getName());
@@ -82,7 +82,7 @@ public class StudentsActivity extends AppCompatActivity {
             intent.putExtra("id_clase", finalId1);
             startActivity(intent);
         });
-
+        //Si el recycler esta vacio, enseña un mensaje por defecto
         if (studentsList.isEmpty()) {
             binding.emptyStudentsView.setVisibility(View.VISIBLE);
         }else{
@@ -92,6 +92,7 @@ public class StudentsActivity extends AppCompatActivity {
         String finalApellido = apellido;
         String finalNombre = nombre;
         int finalId = id;
+        //Boton de añadir estudinate
         boton.setOnClickListener(view -> {
             Intent intent = new Intent(this, AddStudentActivity.class);
             intent.putExtra("dato_nombre", finalNombre);

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifKratos"
+        android:layout_width="415dp"
+        android:layout_height="249dp"
+        android:src="@drawable/kratos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <ImageButton
+        android:id="@+id/cerrarGif"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/username_text_singUp"
+        android:layout_width="299dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:drawableStart="@drawable/ic_chevron_black"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="Eliminado"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
