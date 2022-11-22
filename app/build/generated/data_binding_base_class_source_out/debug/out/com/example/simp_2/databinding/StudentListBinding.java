@@ -19,9 +19,6 @@ public abstract class StudentListBinding extends ViewDataBinding {
   public final View divider;
 
   @NonNull
-  public final TextView idStudentText;
-
-  @NonNull
   public final ImageView imageView;
 
   @NonNull
@@ -31,11 +28,9 @@ public abstract class StudentListBinding extends ViewDataBinding {
   public final TextView surnameStudentText;
 
   protected StudentListBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      View divider, TextView idStudentText, ImageView imageView, TextView nameStudentText,
-      TextView surnameStudentText) {
+      View divider, ImageView imageView, TextView nameStudentText, TextView surnameStudentText) {
     super(_bindingComponent, _root, _localFieldCount);
     this.divider = divider;
-    this.idStudentText = idStudentText;
     this.imageView = imageView;
     this.nameStudentText = nameStudentText;
     this.surnameStudentText = surnameStudentText;

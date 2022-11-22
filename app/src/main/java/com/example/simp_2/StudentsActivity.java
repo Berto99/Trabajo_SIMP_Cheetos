@@ -46,6 +46,7 @@ public class StudentsActivity extends AppCompatActivity {
         ).allowMainThreadQueries().build();
         students=appDatabase.DAOStudent().obtenerStudens();
 
+
         //OBTENER EL NOMBRE DEL USUARIO Y PONERLO EN EL TEXT VIEW
         Bundle extras =getIntent().getExtras();
         nombre = extras.getString("dato_nombre");
@@ -54,14 +55,13 @@ public class StudentsActivity extends AppCompatActivity {
         usuario=extras.getString("dato_usuario");
         nombre_usuario.setText(nombre + " " + apellido);
 
-        //Poner clase en el textView
-        chosen_class.setText(appDatabase.DAOClassroom().obtenerClaseNombre(id));
+        //Poner clase y el curso en el textView
+        chosen_class.setText(appDatabase.DAOClassroom().obtenerClaseGrade(id)
+            + "º "+ appDatabase.DAOClassroom().obtenerClaseNombre(id));
 
         //MOSTRAR EL RECYCLERVIEW
         binding.principalStudentsRecycler.setLayoutManager(new LinearLayoutManager(this));
-
         ArrayList<Student> studentsList = new ArrayList<>();
-
         for (int i =0;i<students.size();i++){
             if(students.get(i).getFk_clase()==id) {
                 studentsList.add(new Student(students.get(i).getNumber_list() ,students.get(i).getName(),students.get(i).getFk_clase()));

@@ -46,7 +46,6 @@ id grade_class_input
 id grade_class_text
 id grade_text
 id grupo
-id id_student_text
 id imageView
 id image_cheetos
 id injustificada

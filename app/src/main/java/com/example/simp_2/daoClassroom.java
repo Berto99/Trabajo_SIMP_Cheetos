@@ -19,4 +19,7 @@ public interface daoClassroom {
 
     @Query("SELECT name FROM Classroom where id=:id")
     String obtenerClaseNombre(int id);
+
+    @Query("SELECT grade FROM Classroom where id=:id")
+    int obtenerClaseGrade(int id);
 }

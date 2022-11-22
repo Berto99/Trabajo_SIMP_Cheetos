@@ -63,8 +63,6 @@ public class StudentAdapter extends ListAdapter<Student, StudentAdapter.StudentV
 
         public void bind(Student student){
             binding.nameStudentText.setText(String.valueOf(student.getName()));
-            binding.idStudentText.setText(String.valueOf(student.getNumber_list()));
-
             binding.getRoot().setOnClickListener( v -> {
                 onItemClickListener.onItemClick(student);
             });

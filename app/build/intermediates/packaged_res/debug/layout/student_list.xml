@@ -13,25 +13,9 @@
         android:padding="10dp" android:tag="layout/student_list_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
         <TextView
-            android:id="@+id/id_student_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/luckiest_guy"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:paddingTop="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/surname_student_text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/surname_student_text"
-            tools:text="1." />
-
-
-        <TextView
             android:id="@+id/name_student_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/id_student_text"
             android:fontFamily="@font/luckiest_guy"
             android:paddingEnd="16dp"
             android:textColor="@color/black"
@@ -46,15 +30,14 @@
             android:id="@+id/surname_student_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/id_student_text"
             android:fontFamily="@font/luckiest_guy"
             android:paddingStart="16dp"
+            android:paddingTop="15dp"
             android:paddingEnd="5dp"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:paddingTop="15dp"
             app:layout_constraintBottom_toBottomOf="@+id/name_student_text"
-            app:layout_constraintStart_toEndOf="@+id/id_student_text"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/name_student_text"
             tools:text="Cortés de Dios," />
 
