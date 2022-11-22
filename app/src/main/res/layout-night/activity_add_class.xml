@@ -52,6 +52,7 @@
             android:paddingStart="6dp"
             android:background="@drawable/edit_text_border_dark"
             android:textColor="@color/white"
+            android:inputType="number"
             android:hint="@string/put_the_grade_here_new_class"
             app:layout_constraintEnd_toEndOf="@+id/grade_class_text"
             app:layout_constraintStart_toStartOf="@+id/grade_class_text"

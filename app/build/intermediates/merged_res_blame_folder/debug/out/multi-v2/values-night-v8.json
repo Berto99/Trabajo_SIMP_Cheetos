@@ -4,24 +4,7 @@
             "outputFile": "com.example.simp_2.app-mergeDebugResources-33:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/alumnotd/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "7,8,9,10,11,12,13,52",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "244,314,398,482,578,680,782,4148",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "309,393,477,573,675,777,871,4232"
-                    }
-                },
-                {
-                    "source": "/home/alumnotd/Escritorio/DAM/ProyectoAndroid/Trabajo_SIMP_Cheetos/app/src/main/res/values-night/themes.xml",
+                    "source": "/home/alumnotd/AndroidStudioProjects/Trabajo_SIMP_Cheetos/app/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "16,2",
                         "startColumns": "4,4",
@@ -37,6 +20,23 @@
                         "endLines": "6,51",
                         "endColumns": "12,12",
                         "endOffsets": "239,4143"
+                    }
+                },
+                {
+                    "source": "/home/alumnotd/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,52",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "244,314,398,482,578,680,782,4148",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "309,393,477,573,675,777,871,4232"
                     }
                 },
                 {

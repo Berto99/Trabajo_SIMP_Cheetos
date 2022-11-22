@@ -51,6 +51,7 @@
             android:layout_marginTop="8dp"
             android:paddingStart="6dp"
             android:background="@drawable/edit_text_border"
+            android:inputType="number"
             android:textColor="@color/black"
             android:hint="@string/put_the_grade_here_new_class"
             app:layout_constraintEnd_toEndOf="@+id/grade_class_text"
