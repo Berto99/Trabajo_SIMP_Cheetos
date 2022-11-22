@@ -40,12 +40,14 @@
             android:id="@+id/total_foults_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="212dp"
             android:fontFamily="@font/luckiest_guy"
             android:textColor="@color/black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.627"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/grupo"
+            app:layout_constraintTop_toTopOf="parent"
             tools:text="Tiene un total de X faltas" />
 
         <RadioGroup
@@ -86,10 +88,12 @@
             android:id="@+id/show_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/show_totals_button"
+            android:layout_marginBottom="4dp"
             android:fontFamily="@font/luckiest_guy"
+            android:text="@string/show_totals_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
@@ -102,7 +106,9 @@
             android:text="@string/save_foults_button"
             app:layout_constraintBottom_toBottomOf="@+id/grupo"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/grupo"
-            app:layout_constraintTop_toTopOf="@+id/grupo" />
+            app:layout_constraintTop_toTopOf="@+id/grupo"
+            app:layout_constraintVertical_bias="0.354" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

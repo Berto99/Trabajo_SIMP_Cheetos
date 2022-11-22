@@ -7,8 +7,8 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifKratos"
-        android:layout_width="695dp"
-        android:layout_height="394dp"
+        android:layout_width="727dp"
+        android:layout_height="407dp"
         android:src="@drawable/kratos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -46,25 +46,11 @@
             android:layout_width="385dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/save_faults"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chosen_class"
             tools:itemCount="7"
             tools:listitem="@layout/student_list" />
-
-        <Button
-            android:id="@+id/save_faults"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="@font/luckiest_guy"
-            android:text="@string/save_foults_button"
-            app:layout_constraintBottom_toTopOf="@+id/new_student"
-            app:layout_constraintEnd_toEndOf="@+id/principal_students_recycler"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/principal_students_recycler" />
 
         <!--El mensaje cuando no hay lista-->
         <TextView

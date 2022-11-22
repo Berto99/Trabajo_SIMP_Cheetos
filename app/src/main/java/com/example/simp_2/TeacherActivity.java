@@ -82,7 +82,7 @@ public class TeacherActivity extends AppCompatActivity {
         });
         binding.principalRecycler.setAdapter(adapter);
         adapter.submitList(classroomList);
-
+        //Si el recycler esta vacio, saldra un mensaje
         if (classroomList.isEmpty()) {
             binding.emptyView.setVisibility(View.VISIBLE);
         }else{

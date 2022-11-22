@@ -68,10 +68,12 @@ public class TotalActivity extends AppCompatActivity {
                         int id_clase) {
         //Cunado pulse el boton
         boton.setOnClickListener(view -> {
+            //Poner fecha actual
             Date date;
             Calendar calendar = Calendar.getInstance();
             date = calendar.getTime();
             Intent intent = new Intent(this, StudentsActivity.class);
+            //Depende de la opcion que indiquemos, insertara una falta injustificada, retraso o justificara
             if (injustficada.isChecked()) {
                 Toast.makeText(this, "Falta injustificada introducida", Toast.LENGTH_SHORT).show();
                 appDatabase.DAOFaltas().insertarFalta(new Faltas(id, usuario, date, "I"));
@@ -87,6 +89,7 @@ public class TotalActivity extends AppCompatActivity {
                 comprobarFaltas(appDatabase,id,usuario,nombre,apellido,id_clase);
             }
             else{
+                //Pasamos los datos al activity anterior para que no se quede vacio
                 intent.putExtra("id_alumno", id);
                 intent.putExtra("dato_usuario", usuario);
                 intent.putExtra("dato_nombre", nombre);
@@ -168,6 +171,7 @@ public class TotalActivity extends AppCompatActivity {
     }
 
     private void mostrarResultado(AppData appDatabase,int id,TextView texto){
+        //Mostrar faltas con una consulta a la BBDD
         int numFaltasInjus=appDatabase.DAOFaltas().numFaltas(id);
         int numRetrasos=appDatabase.DAOFaltas().numRetrasos(id);
         texto.setText("Faltas injustificadas: "+numFaltasInjus +"\n"

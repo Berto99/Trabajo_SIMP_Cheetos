@@ -33,7 +33,7 @@ public class AddClassActivity extends AppCompatActivity {
 
         clase= appDatabase.DAOClassroom().obtenerClase();
 
-        //Recibimos el dato del usuario del activuty de classroom
+        //Recibimos el dato del usuario del activity de classroom
         Bundle extras =getIntent().getExtras();
         String usuario= extras.getString("dato_usuario2");
         String nombre = extras.getString("dato_nombre2");
@@ -45,11 +45,12 @@ public class AddClassActivity extends AppCompatActivity {
             int comprobacion=0;
             grade = grado.getText().toString();
             nombreClass=nombreClase.getText().toString();
-
+            //No puede dejar los campos vacios
             if (grade.equals("")||nombreClass.equals("")){
                 Toast.makeText(this, "ERROR:Campos vacios", Toast.LENGTH_SHORT).show();
             }
             else{
+                //recorre una lista de clases para comprobar si existe
                 for (int i = 0; i < clase.size(); i++) {
                     aux=Integer.toString(clase.get(i).getGrade());
                     if (aux.equalsIgnoreCase(grade)&& clase.get(i).getName().equalsIgnoreCase(nombreClass)){

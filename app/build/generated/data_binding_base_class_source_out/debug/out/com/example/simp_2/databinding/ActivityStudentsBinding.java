@@ -39,12 +39,12 @@ public abstract class ActivityStudentsBinding extends ViewDataBinding {
    * <ul>
    *   <li>layout-land/</li>
    *   <li>layout-land-night/</li>
-   *   <li>layout-night/</li>
    * </ul>
    *
    * Absent:
    * <ul>
    *   <li>layout/</li>
+   *   <li>layout-night/</li>
    * </ul>
    */
   @Nullable

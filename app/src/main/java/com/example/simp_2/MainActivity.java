@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         MediaPlayer mp = MediaPlayer.create(this, R.raw.mps2);
 
         List<Usuario> listaUsuarios;
-
+        //Acceder a la BBDD
         AppData appDatabase = Room.databaseBuilder(
                 getApplicationContext(),
                 AppData.class,
@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         listaUsuarios = appDatabase.DAOusuario().obtenerUsuarios();
 
         comprobarUsuario(btnEntrar,user,pass,listaUsuarios);
-
         btnRegistrar.setOnClickListener(view -> {
             mp.start();
             Intent intent = new Intent(this, RegistroActivity.class);
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             String apellido =null;
             int comprobacionUsuario = 0;
             int comprobacionPasswd = 0;
-
+            //Comprobamos si ese usuario existe con su debida contraseña
             for (int i = 0; i < listaUsuarios.size(); i++) {
                 if (usu.equals(listaUsuarios.get(i).usuario)) {
                     comprobacionUsuario = 1;
@@ -70,9 +69,11 @@ public class MainActivity extends AppCompatActivity {
                     comprobacionPasswd = 1;
                 }
             }
+            //Para que no pueda dejar en blanco los campos
             if (usu.equals("") || passwd.equals("")) {
                 Toast.makeText(this, "ERROR:Campos Vacios", Toast.LENGTH_SHORT).show();
             }
+            //Si esta bien pasa al siguiente activity
             else if (comprobacionUsuario == 1 && comprobacionPasswd == 1) {
                 Intent intent = new Intent(this, TeacherActivity.class);
                 intent.putExtra("dato_usuario",usu);

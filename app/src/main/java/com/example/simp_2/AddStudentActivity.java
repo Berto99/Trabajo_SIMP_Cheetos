@@ -19,7 +19,7 @@ public class AddStudentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_student);
-
+        //Variables
         EditText nombre_usuario= findViewById(R.id.student_name);
         Button boton = findViewById(R.id.register_student);
         String nombre = null;
@@ -41,7 +41,7 @@ public class AddStudentActivity extends AppCompatActivity {
         id=extras.getInt("id_clase");
         usuario= extras.getString("dato_usuario");
 
-
+        //Variables Auxiliares para el intent
         AtomicReference<String> nombreAux= new AtomicReference<>(nombre);
         AtomicReference<String> apellidoAux= new AtomicReference<>(apellido);
         AtomicInteger idAux= new AtomicInteger(id);
@@ -58,6 +58,7 @@ public class AddStudentActivity extends AppCompatActivity {
             String nombre_student= String.valueOf(nombre_usuario.getText());
             int i,comprobacion = 0;
             int num_lista=appDatabase.DAOStudent().obtenernumLista(idAux.get());
+            //Comprobacion de una lista sacada de la BBDD si el usuario existe
             for( i =0;i<student.size();i++){
                 if (student.get(i).getName().equalsIgnoreCase(nombre_student)){
                     comprobacion=1;
