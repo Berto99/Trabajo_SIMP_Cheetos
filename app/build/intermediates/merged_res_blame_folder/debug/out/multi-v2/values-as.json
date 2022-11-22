@@ -4,7 +4,7 @@
             "outputFile": "com.example.simp_2.app-mergeDebugResources-33:/values-as/values-as.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alber\\.gradle\\caches\\transforms-3\\034f511a629c0fda711794a09fef4382\\transformed\\appcompat-1.5.1\\res\\values-as\\values-as.xml",
+                    "source": "/home/alumnotd/.gradle/caches/transforms-3/034f511a629c0fda711794a09fef4382/transformed/appcompat-1.5.1/res/values-as/values-as.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\alber\\.gradle\\caches\\transforms-3\\87a796fe63836d99a2198ac6a6284cb3\\transformed\\core-1.8.0\\res\\values-as\\values-as.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "88",
-                        "startColumns": "4",
-                        "startOffsets": "7324",
-                        "endColumns": "100",
-                        "endOffsets": "7420"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\alber\\.gradle\\caches\\transforms-3\\bd4a99450df9efa1e9019504ea56c77f\\transformed\\material-1.6.1\\res\\values-as\\values-as.xml",
+                    "source": "/home/alumnotd/.gradle/caches/transforms-3/bd4a99450df9efa1e9019504ea56c77f/transformed/material-1.6.1/res/values-as/values-as.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -54,6 +37,23 @@
                         "endLines": "5,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86",
                         "endColumns": "12,76,101,122,78,64,88,64,58,85,63,62,69,63,53,104,57,61,53,71,116,86,82,109,76,80,90,66,65,69,76,86,70,76,68,68,90,71,88,88,73,71,85,49,65,79,83,61,63,62,99,96,91,98,80",
                         "endOffsets": "272,3092,3194,3317,3396,3461,3550,3615,3674,3760,3824,3887,3957,4021,4075,4180,4238,4300,4354,4426,4543,4630,4713,4823,4900,4981,5072,5139,5205,5275,5352,5439,5510,5587,5656,5725,5816,5888,5977,6066,6140,6212,6298,6348,6414,6494,6578,6640,6704,6767,6867,6964,7056,7155,7236"
+                    }
+                },
+                {
+                    "source": "/home/alumnotd/.gradle/caches/transforms-3/87a796fe63836d99a2198ac6a6284cb3/transformed/core-1.8.0/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "88",
+                        "startColumns": "4",
+                        "startOffsets": "7324",
+                        "endColumns": "100",
+                        "endOffsets": "7420"
                     }
                 }
             ]

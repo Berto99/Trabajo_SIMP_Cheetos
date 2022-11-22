@@ -36,6 +36,7 @@ public class StudentsActivity extends AppCompatActivity {
         int id = 0;
         List<Student> students;
         String usuario;
+        TextView chosen_class= findViewById(R.id.chosen_class);
 
         //Acceder BBDD
         AppData appDatabase = Room.databaseBuilder(
@@ -52,6 +53,9 @@ public class StudentsActivity extends AppCompatActivity {
         id = extras.getInt("id_clase");
         usuario=extras.getString("dato_usuario");
         nombre_usuario.setText(nombre + " " + apellido);
+
+        //Poner clase en el textView
+        chosen_class.setText(appDatabase.DAOClassroom().obtenerClaseNombre(id));
 
         //MOSTRAR EL RECYCLERVIEW
         binding.principalStudentsRecycler.setLayoutManager(new LinearLayoutManager(this));

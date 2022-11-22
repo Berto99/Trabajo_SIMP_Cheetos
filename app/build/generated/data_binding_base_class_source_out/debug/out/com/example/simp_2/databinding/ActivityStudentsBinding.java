@@ -32,7 +32,22 @@ public abstract class ActivityStudentsBinding extends ViewDataBinding {
   @NonNull
   public final RecyclerView principalStudentsRecycler;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   *   <li>layout-land-night/</li>
+   *   <li>layout-night/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final Button saveFaults;
 
   @NonNull
