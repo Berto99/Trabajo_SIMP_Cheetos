@@ -1,38 +1,42 @@
 [
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/principal_list.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/principal_list.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/activity_students.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/activity_students.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/activity_main.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/activity_main.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/activity_registro.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/activity_registro.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/student_list.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/student_list.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/principal_list.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/principal_list.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/activity_add_class.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/activity_add_class.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/student_list.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/student_list.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/activity_add_student.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/activity_add_student.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/activity_add_class.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/activity_add_class.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/activity_teacher.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/activity_teacher.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/activity_total.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/activity_total.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/activity_registro.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/activity_registro.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-34:/layout/activity_teacher.xml",
+        "source": "com.example.simp_2.app-main-37:/layout/activity_teacher.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/activity_total.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/activity_total.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout/activity_students.xml",
-        "source": "com.example.simp_2.app-main-7:/layout/activity_students.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/activity_add_student.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/activity_add_student.xml"
+    },
+    {
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout/activity_teacher.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout/activity_teacher.xml"
     }
 ]

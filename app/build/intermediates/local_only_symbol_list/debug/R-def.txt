@@ -136,6 +136,7 @@ string sign_in
 string surname
 string unjustified
 string username
+string your_classes
 style DialogAnim
 style Theme.SIMP_2
 xml backup_rules

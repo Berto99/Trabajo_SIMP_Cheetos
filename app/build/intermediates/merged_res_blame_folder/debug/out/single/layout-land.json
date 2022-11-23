@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-4:\\layout-land\\student_list.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-7:\\layout-land\\student_list.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_students.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout-land/activity_students.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-4:\\layout-land\\activity_main.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-7:\\layout-land\\activity_main.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_total.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout-land/activity_total.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-4:\\layout-land\\activity_students.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-7:\\layout-land\\activity_students.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_main.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout-land/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-4:\\layout-land\\activity_teacher.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-7:\\layout-land\\activity_teacher.xml"
+        "merged": "com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_teacher.xml",
+        "source": "com.example.simp_2.app-main-37:/layout-land/activity_teacher.xml"
     },
     {
-        "merged": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-mergeDebugResources-4:\\layout-land\\activity_total.xml",
-        "source": "C:\\Users\\alber\\.gradle\\daemon\\7.4\\com.example.simp_2.app-main-7:\\layout-land\\activity_total.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout-land/student_list.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout-land/student_list.xml"
     },
     {
-        "merged": "com.example.simp_2.app-mergeDebugResources-4:/layout-land/activity_total.xml",
-        "source": "com.example.simp_2.app-main-7:/layout-land/activity_total.xml"
+        "merged": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-mergeDebugResources-34:/layout-land/activity_teacher.xml",
+        "source": "/home/alumnotd/.gradle/daemon/7.4/com.example.simp_2.app-main-37:/layout-land/activity_teacher.xml"
     }
 ]

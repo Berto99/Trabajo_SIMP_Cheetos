@@ -23,7 +23,7 @@
             android:textColor="@color/white"
             android:fontFamily="@font/luckiest_guy"
             android:padding="4dp"
-            android:text="your classes"
+            android:text="@string/your_classes"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/username_view" />
